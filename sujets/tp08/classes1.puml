@@ -1,0 +1,69 @@
+@startuml
+
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+class BackupCalculator {
+    public BackupCalculator(int memorySize);
+    public void save();
+}
+
+class TextFile {
+    private BufferedWriter fW_;
+    private BufferedReader fR_;
+    private char mode_;
+
+    public void open(String filename, String mode) throws IOException;
+    public void close() throws IOException;
+    public String read() throws IOException;
+    public void write(String s) throws IOException;
+}
+
+class TcpServer {
+    private int port_;
+    private ServerSocket receptionist;
+    Socket socket_;
+
+    public TcpServer(int port);
+    public void listen();
+}
+
+class Service {
+    Socket socket_;
+    ObjectInputStream input_;
+    ObjectOutputStream output_;
+
+    Service(Socket socket);
+    public boolean provideService();
+    public void terminate();
+}
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations
+BackupCalculator "1" *-up- "1" TextFile: ft
+Calculator <|-down- BackupCalculator: Inheritance
+Service "1" *-up- "1" BackupCalculator: calculator
+TcpServer "1" *-up- "1" Service: service
+
+@enduml

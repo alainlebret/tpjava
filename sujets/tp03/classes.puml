@@ -1,0 +1,30 @@
+@startuml
+
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+	
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+
+@enduml

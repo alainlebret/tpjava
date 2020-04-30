@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="1051px" preserveAspectRatio="none"
+     style="width:734px;height:1051px;" version="1.1" viewBox="0 0 734 1051" width="734px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1ss00rj9soktw" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--class Operation-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="99.2188" id="Operation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="254" x="413" y="8"/>
+        <ellipse cx="504.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M507.0938,19.6719 L507.2656,19.75 C507.4844,19.4375 507.6875,19.3438 507.9844,19.3438 C508.2813,19.3438 508.5625,19.4844 508.7188,19.75 C508.8125,19.9063 508.8281,20.0313 508.8281,20.4688 L508.8281,21.8906 C508.8281,22.3125 508.7969,22.5 508.6875,22.6563 C508.5156,22.875 508.25,23.0156 507.9844,23.0156 C507.7656,23.0156 507.5313,22.9063 507.3906,22.7656 C507.25,22.6406 507.2188,22.5156 507.1563,22.1094 C507.0625,21.7031 506.8906,21.4844 506.4063,21.2031 C505.9375,20.9531 505.3281,20.7969 504.75,20.7969 C503.0156,20.7969 501.7656,22.1094 501.7656,23.8906 L501.7656,24.9844 C501.7656,26.6875 503.0625,27.7813 505.1094,27.7813 C505.875,27.7813 506.5625,27.6563 506.9844,27.3906 C507.1719,27.2969 507.1719,27.2969 507.625,26.8125 C507.8125,26.625 508.0156,26.5469 508.2344,26.5469 C508.7031,26.5469 509.0938,26.9375 509.0938,27.3906 C509.0938,27.7813 508.7656,28.2344 508.1875,28.6406 C507.4375,29.1875 506.2813,29.4844 505.0625,29.4844 C502.1719,29.4844 500.0625,27.5938 500.0625,25.0156 L500.0625,23.8906 C500.0625,21.1719 502.0625,19.0938 504.6875,19.0938 C505.5625,19.0938 506.1563,19.2344 507.0938,19.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="525.25" y="28.1543">Operation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="414" x2="666" y1="40" y2="40"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145"
+              x="419" y="54.2104">private String operation_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="414" x2="666" y1="60.8047" y2="60.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105"
+              x="419" y="75.0151">public Operation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161"
+              x="419" y="87.8198">public String getOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242"
+              x="419" y="100.6245">public void setOperation(String operation);
+        </text><!--class MathematicalOperation-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="99.2188" id="MathematicalOperation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="367" x="356.5" y="184"/>
+        <ellipse cx="462.75" cy="200" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M465.0938,195.6719 L465.2656,195.75 C465.4844,195.4375 465.6875,195.3438 465.9844,195.3438 C466.2813,195.3438 466.5625,195.4844 466.7188,195.75 C466.8125,195.9063 466.8281,196.0313 466.8281,196.4688 L466.8281,197.8906 C466.8281,198.3125 466.7969,198.5 466.6875,198.6563 C466.5156,198.875 466.25,199.0156 465.9844,199.0156 C465.7656,199.0156 465.5313,198.9063 465.3906,198.7656 C465.25,198.6406 465.2188,198.5156 465.1563,198.1094 C465.0625,197.7031 464.8906,197.4844 464.4063,197.2031 C463.9375,196.9531 463.3281,196.7969 462.75,196.7969 C461.0156,196.7969 459.7656,198.1094 459.7656,199.8906 L459.7656,200.9844 C459.7656,202.6875 461.0625,203.7813 463.1094,203.7813 C463.875,203.7813 464.5625,203.6563 464.9844,203.3906 C465.1719,203.2969 465.1719,203.2969 465.625,202.8125 C465.8125,202.625 466.0156,202.5469 466.2344,202.5469 C466.7031,202.5469 467.0938,202.9375 467.0938,203.3906 C467.0938,203.7813 466.7656,204.2344 466.1875,204.6406 C465.4375,205.1875 464.2813,205.4844 463.0625,205.4844 C460.1719,205.4844 458.0625,203.5938 458.0625,201.0156 L458.0625,199.8906 C458.0625,197.1719 460.0625,195.0938 462.6875,195.0938 C463.5625,195.0938 464.1563,195.2344 465.0938,195.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146"
+              x="483.25" y="204.1543">MathematicalOperation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="357.5" x2="722.5" y1="216" y2="216"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128"
+              x="362.5" y="230.2104">private double result_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="357.5" x2="722.5" y1="236.8047" y2="236.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180"
+              x="362.5" y="251.0151">public MathematicalOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="355"
+              x="362.5" y="263.8198">public void solve(String operation) throws OperationException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="362.5" y="276.6245">public String toString();
+        </text><!--class Calculator-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="99.2188" id="Calculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="210" x="435" y="379.5"/>
+        <ellipse cx="504.25" cy="395.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M506.5938,391.1719 L506.7656,391.25 C506.9844,390.9375 507.1875,390.8438 507.4844,390.8438 C507.7813,390.8438 508.0625,390.9844 508.2188,391.25 C508.3125,391.4063 508.3281,391.5313 508.3281,391.9688 L508.3281,393.3906 C508.3281,393.8125 508.2969,394 508.1875,394.1563 C508.0156,394.375 507.75,394.5156 507.4844,394.5156 C507.2656,394.5156 507.0313,394.4063 506.8906,394.2656 C506.75,394.1406 506.7188,394.0156 506.6563,393.6094 C506.5625,393.2031 506.3906,392.9844 505.9063,392.7031 C505.4375,392.4531 504.8281,392.2969 504.25,392.2969 C502.5156,392.2969 501.2656,393.6094 501.2656,395.3906 L501.2656,396.4844 C501.2656,398.1875 502.5625,399.2813 504.6094,399.2813 C505.375,399.2813 506.0625,399.1563 506.4844,398.8906 C506.6719,398.7969 506.6719,398.7969 507.125,398.3125 C507.3125,398.125 507.5156,398.0469 507.7344,398.0469 C508.2031,398.0469 508.5938,398.4375 508.5938,398.8906 C508.5938,399.2813 508.2656,399.7344 507.6875,400.1406 C506.9375,400.6875 505.7813,400.9844 504.5625,400.9844 C501.6719,400.9844 499.5625,399.0938 499.5625,396.5156 L499.5625,395.3906 C499.5625,392.6719 501.5625,390.5938 504.1875,390.5938 C505.0625,390.5938 505.6563,390.7344 506.5938,391.1719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="524.75" y="399.6543">Calculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="436" x2="644" y1="411.5" y2="411.5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101"
+              x="441" y="425.7104">private int index_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="436" x2="644" y1="432.3047" y2="432.3047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="441" y="446.5151">public Calculator();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198"
+              x="441" y="459.3198">public void solve(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="441" y="472.1245">public String toString();
+        </text><!--class BackupCalculator-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="73.6094" id="BackupCalculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="247" x="176.5" y="575"/>
+        <ellipse cx="241.25" cy="591" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M243.5938,586.6719 L243.7656,586.75 C243.9844,586.4375 244.1875,586.3438 244.4844,586.3438 C244.7813,586.3438 245.0625,586.4844 245.2188,586.75 C245.3125,586.9063 245.3281,587.0313 245.3281,587.4688 L245.3281,588.8906 C245.3281,589.3125 245.2969,589.5 245.1875,589.6563 C245.0156,589.875 244.75,590.0156 244.4844,590.0156 C244.2656,590.0156 244.0313,589.9063 243.8906,589.7656 C243.75,589.6406 243.7188,589.5156 243.6563,589.1094 C243.5625,588.7031 243.3906,588.4844 242.9063,588.2031 C242.4375,587.9531 241.8281,587.7969 241.25,587.7969 C239.5156,587.7969 238.2656,589.1094 238.2656,590.8906 L238.2656,591.9844 C238.2656,593.6875 239.5625,594.7813 241.6094,594.7813 C242.375,594.7813 243.0625,594.6563 243.4844,594.3906 C243.6719,594.2969 243.6719,594.2969 244.125,593.8125 C244.3125,593.625 244.5156,593.5469 244.7344,593.5469 C245.2031,593.5469 245.5938,593.9375 245.5938,594.3906 C245.5938,594.7813 245.2656,595.2344 244.6875,595.6406 C243.9375,596.1875 242.7813,596.4844 241.5625,596.4844 C238.6719,596.4844 236.5625,594.5938 236.5625,592.0156 L236.5625,590.8906 C236.5625,588.1719 238.5625,586.0938 241.1875,586.0938 C242.0625,586.0938 242.6563,586.2344 243.5938,586.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="109"
+              x="261.75" y="595.1543">BackupCalculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="177.5" x2="422.5" y1="607" y2="607"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="177.5" x2="422.5" y1="615" y2="615"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="235"
+              x="182.5" y="629.2104">public BackupCalculator(int memorySize);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="182.5" y="642.0151">public void save();
+        </text><!--class TextFile-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="137.6328" id="TextFile"
+              style="stroke: #A80036; stroke-width: 1.5;" width="394" x="6" y="360"/>
+        <ellipse cx="175.25" cy="376" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M177.5938,371.6719 L177.7656,371.75 C177.9844,371.4375 178.1875,371.3438 178.4844,371.3438 C178.7813,371.3438 179.0625,371.4844 179.2188,371.75 C179.3125,371.9063 179.3281,372.0313 179.3281,372.4688 L179.3281,373.8906 C179.3281,374.3125 179.2969,374.5 179.1875,374.6563 C179.0156,374.875 178.75,375.0156 178.4844,375.0156 C178.2656,375.0156 178.0313,374.9063 177.8906,374.7656 C177.75,374.6406 177.7188,374.5156 177.6563,374.1094 C177.5625,373.7031 177.3906,373.4844 176.9063,373.2031 C176.4375,372.9531 175.8281,372.7969 175.25,372.7969 C173.5156,372.7969 172.2656,374.1094 172.2656,375.8906 L172.2656,376.9844 C172.2656,378.6875 173.5625,379.7813 175.6094,379.7813 C176.375,379.7813 177.0625,379.6563 177.4844,379.3906 C177.6719,379.2969 177.6719,379.2969 178.125,378.8125 C178.3125,378.625 178.5156,378.5469 178.7344,378.5469 C179.2031,378.5469 179.5938,378.9375 179.5938,379.3906 C179.5938,379.7813 179.2656,380.2344 178.6875,380.6406 C177.9375,381.1875 176.7813,381.4844 175.5625,381.4844 C172.6719,381.4844 170.5625,379.5938 170.5625,377.0156 L170.5625,375.8906 C170.5625,373.1719 172.5625,371.0938 175.1875,371.0938 C176.0625,371.0938 176.6563,371.2344 177.5938,371.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47"
+              x="195.75" y="380.1543">TextFile
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="399" y1="392" y2="392"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152"
+              x="12" y="406.2104">private BufferedWriter fW_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157"
+              x="12" y="419.0151">private BufferedReader fR_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114"
+              x="12" y="431.8198">private char mode_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="399" y1="438.4141" y2="438.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="382"
+              x="12" y="452.6245">public void open(String filename, String mode) throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="219"
+              x="12" y="465.4292">public void close() throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226"
+              x="12" y="478.2339">public String read() throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262"
+              x="12" y="491.0386">public void write(String s) throws IOException;
+        </text><!--class TcpServer-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="112.0234" id="TcpServer"
+              style="stroke: #A80036; stroke-width: 1.5;" width="206" x="197" y="928"/>
+        <ellipse cx="264.75" cy="944" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M267.0938,939.6719 L267.2656,939.75 C267.4844,939.4375 267.6875,939.3438 267.9844,939.3438 C268.2813,939.3438 268.5625,939.4844 268.7188,939.75 C268.8125,939.9063 268.8281,940.0313 268.8281,940.4688 L268.8281,941.8906 C268.8281,942.3125 268.7969,942.5 268.6875,942.6563 C268.5156,942.875 268.25,943.0156 267.9844,943.0156 C267.7656,943.0156 267.5313,942.9063 267.3906,942.7656 C267.25,942.6406 267.2188,942.5156 267.1563,942.1094 C267.0625,941.7031 266.8906,941.4844 266.4063,941.2031 C265.9375,940.9531 265.3281,940.7969 264.75,940.7969 C263.0156,940.7969 261.7656,942.1094 261.7656,943.8906 L261.7656,944.9844 C261.7656,946.6875 263.0625,947.7813 265.1094,947.7813 C265.875,947.7813 266.5625,947.6563 266.9844,947.3906 C267.1719,947.2969 267.1719,947.2969 267.625,946.8125 C267.8125,946.625 268.0156,946.5469 268.2344,946.5469 C268.7031,946.5469 269.0938,946.9375 269.0938,947.3906 C269.0938,947.7813 268.7656,948.2344 268.1875,948.6406 C267.4375,949.1875 266.2813,949.4844 265.0625,949.4844 C262.1719,949.4844 260.0625,947.5938 260.0625,945.0156 L260.0625,943.8906 C260.0625,941.1719 262.0625,939.0938 264.6875,939.0938 C265.5625,939.0938 266.1563,939.2344 267.0938,939.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="285.25" y="948.1543">TcpServer
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="198" x2="402" y1="960" y2="960"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94"
+              x="203" y="974.2104">private int port_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="194"
+              x="203" y="987.0151">private ServerSocket receptionist;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="203" y="999.8198">Socket socket_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="198" x2="402" y1="1006.4141" y2="1006.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148"
+              x="203" y="1020.6245">public TcpServer(int port);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107"
+              x="203" y="1033.4292">public void listen();
+        </text><!--class Service-->
+        <rect fill="#FEFECE" filter="url(#f1ss00rj9soktw)" height="124.8281" id="Service"
+              style="stroke: #A80036; stroke-width: 1.5;" width="194" x="203" y="726"/>
+        <ellipse cx="273.25" cy="742" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M275.5938,737.6719 L275.7656,737.75 C275.9844,737.4375 276.1875,737.3438 276.4844,737.3438 C276.7813,737.3438 277.0625,737.4844 277.2188,737.75 C277.3125,737.9063 277.3281,738.0313 277.3281,738.4688 L277.3281,739.8906 C277.3281,740.3125 277.2969,740.5 277.1875,740.6563 C277.0156,740.875 276.75,741.0156 276.4844,741.0156 C276.2656,741.0156 276.0313,740.9063 275.8906,740.7656 C275.75,740.6406 275.7188,740.5156 275.6563,740.1094 C275.5625,739.7031 275.3906,739.4844 274.9063,739.2031 C274.4375,738.9531 273.8281,738.7969 273.25,738.7969 C271.5156,738.7969 270.2656,740.1094 270.2656,741.8906 L270.2656,742.9844 C270.2656,744.6875 271.5625,745.7813 273.6094,745.7813 C274.375,745.7813 275.0625,745.6563 275.4844,745.3906 C275.6719,745.2969 275.6719,745.2969 276.125,744.8125 C276.3125,744.625 276.5156,744.5469 276.7344,744.5469 C277.2031,744.5469 277.5938,744.9375 277.5938,745.3906 C277.5938,745.7813 277.2656,746.2344 276.6875,746.6406 C275.9375,747.1875 274.7813,747.4844 273.5625,747.4844 C270.6719,747.4844 268.5625,745.5938 268.5625,743.0156 L268.5625,741.8906 C268.5625,739.1719 270.5625,737.0938 273.1875,737.0938 C274.0625,737.0938 274.6563,737.2344 275.5938,737.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="45"
+              x="293.75" y="746.1543">Service
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="204" x2="396" y1="758" y2="758"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89"
+              x="209" y="772.2104">Socket socket_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148"
+              x="209" y="785.0151">ObjectInputStream input_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="166"
+              x="209" y="797.8198">ObjectOutputStream output_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="204" x2="396" y1="804.4141" y2="804.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="133"
+              x="209" y="818.6245">Service(Socket socket);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="182"
+              x="209" y="831.4292">public boolean provideService();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="131"
+              x="209" y="844.2339">public void terminate();
+        </text><!--link Operation to MathematicalOperation-->
+        <path d="M540,127.63 C540,146.479 540,166.496 540,183.936 " fill="none" id="Operation-MathematicalOperation"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="533,127.432,540,107.432,547,127.432,533,127.432"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="541" y="150.0669">Inheritance
+        </text><!--link MathematicalOperation to Calculator-->
+        <path d="M540,283.328 C540,308.422 540,339.269 540,366.025 " fill="none" id="MathematicalOperation-Calculator"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="540,379.187,544,373.187,540,367.187,536,373.187,540,379.187"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68"
+              x="541" y="326.0669">operations
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="532.5078" y="303.4506">*
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="531.4625" y="368.5467">1
+        </text><!--link TextFile to BackupCalculator-->
+        <path d="M239.533,498.17 C251.151,519.849 263.746,543.351 274.418,563.265 " fill="none"
+              id="TextFile-BackupCalculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="280.623,574.843,281.3142,567.6651,274.9543,564.2664,274.2631,571.4443,280.623,574.843"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="9"
+              x="264" y="541.0669">ft
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="234.7355" y="517.8087">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="268.459" y="564.002">1
+        </text><!--link Calculator to BackupCalculator-->
+        <path d="M459.687,490.569 C422.695,518.468 380.032,550.643 348.114,574.714 " fill="none"
+              id="Calculator-BackupCalculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="455.501,484.958,475.684,478.505,463.931,496.136,455.501,484.958"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="406" y="541.0669">Inheritance
+        </text><!--link BackupCalculator to Service-->
+        <path d="M300,649.157 C300,667.596 300,690.736 300,712.786 " fill="none" id="BackupCalculator-Service"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="300,725.959,304,719.959,300,713.959,296,719.959,300,725.959"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="301" y="692.0669">calculator
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="291.3375" y="668.6636">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="291.5375" y="714.945">1
+        </text><!--link Service to TcpServer-->
+        <path d="M300,851.257 C300,871.399 300,893.879 300,914.486 " fill="none" id="Service-TcpServer"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="300,927.715,304,921.715,300,915.715,296,921.715,300,927.715"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="45"
+              x="301" y="894.0669">service
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="291.5625" y="871.0249">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="291.5125" y="917.0148">1
+        </text><!--
+@startuml
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+class BackupCalculator {
+    public BackupCalculator(int memorySize);
+    public void save();
+}
+
+class TextFile {
+    private BufferedWriter fW_;
+    private BufferedReader fR_;
+    private char mode_;
+
+    public void open(String filename, String mode) throws IOException;
+    public void close() throws IOException;
+    public String read() throws IOException;
+    public void write(String s) throws IOException;
+}
+
+class TcpServer {
+    private int port_;
+    private ServerSocket receptionist;
+    Socket socket_;
+
+    public TcpServer(int port);
+    public void listen();
+}
+
+class Service {
+    Socket socket_;
+    ObjectInputStream input_;
+    ObjectOutputStream output_;
+
+    Service(Socket socket);
+    public boolean provideService();
+    public void terminate();
+}
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations
+BackupCalculator "1" *-up- "1" TextFile: ft
+Calculator <|-down- BackupCalculator: Inheritance
+Service "1" *-up- "1" BackupCalculator: calculator
+TcpServer "1" *-up- "1" Service: service
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

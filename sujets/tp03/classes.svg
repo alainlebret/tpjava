@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="470px" preserveAspectRatio="none"
+     style="width:384px;height:470px;" version="1.1" viewBox="0 0 384 470" width="384px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1fnp00yo5nlgc" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--class Operation-->
+        <rect fill="#FEFECE" filter="url(#f1fnp00yo5nlgc)" height="99.2188" id="Operation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="254" x="62.5" y="8"/>
+        <ellipse cx="154.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M156.5938,19.6719 L156.7656,19.75 C156.9844,19.4375 157.1875,19.3438 157.4844,19.3438 C157.7813,19.3438 158.0625,19.4844 158.2188,19.75 C158.3125,19.9063 158.3281,20.0313 158.3281,20.4688 L158.3281,21.8906 C158.3281,22.3125 158.2969,22.5 158.1875,22.6563 C158.0156,22.875 157.75,23.0156 157.4844,23.0156 C157.2656,23.0156 157.0313,22.9063 156.8906,22.7656 C156.75,22.6406 156.7188,22.5156 156.6563,22.1094 C156.5625,21.7031 156.3906,21.4844 155.9063,21.2031 C155.4375,20.9531 154.8281,20.7969 154.25,20.7969 C152.5156,20.7969 151.2656,22.1094 151.2656,23.8906 L151.2656,24.9844 C151.2656,26.6875 152.5625,27.7813 154.6094,27.7813 C155.375,27.7813 156.0625,27.6563 156.4844,27.3906 C156.6719,27.2969 156.6719,27.2969 157.125,26.8125 C157.3125,26.625 157.5156,26.5469 157.7344,26.5469 C158.2031,26.5469 158.5938,26.9375 158.5938,27.3906 C158.5938,27.7813 158.2656,28.2344 157.6875,28.6406 C156.9375,29.1875 155.7813,29.4844 154.5625,29.4844 C151.6719,29.4844 149.5625,27.5938 149.5625,25.0156 L149.5625,23.8906 C149.5625,21.1719 151.5625,19.0938 154.1875,19.0938 C155.0625,19.0938 155.6563,19.2344 156.5938,19.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="174.75" y="28.1543">Operation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="63.5" x2="315.5" y1="40" y2="40"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145"
+              x="68.5" y="54.2104">private String operation_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="63.5" x2="315.5" y1="60.8047" y2="60.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105"
+              x="68.5" y="75.0151">public Operation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161"
+              x="68.5" y="87.8198">public String getOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242"
+              x="68.5" y="100.6245">public void setOperation(String operation);
+        </text><!--class MathematicalOperation-->
+        <rect fill="#FEFECE" filter="url(#f1fnp00yo5nlgc)" height="99.2188" id="MathematicalOperation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="367" x="6" y="184"/>
+        <ellipse cx="112.25" cy="200" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M114.5938,195.6719 L114.7656,195.75 C114.9844,195.4375 115.1875,195.3438 115.4844,195.3438 C115.7813,195.3438 116.0625,195.4844 116.2188,195.75 C116.3125,195.9063 116.3281,196.0313 116.3281,196.4688 L116.3281,197.8906 C116.3281,198.3125 116.2969,198.5 116.1875,198.6563 C116.0156,198.875 115.75,199.0156 115.4844,199.0156 C115.2656,199.0156 115.0313,198.9063 114.8906,198.7656 C114.75,198.6406 114.7188,198.5156 114.6563,198.1094 C114.5625,197.7031 114.3906,197.4844 113.9063,197.2031 C113.4375,196.9531 112.8281,196.7969 112.25,196.7969 C110.5156,196.7969 109.2656,198.1094 109.2656,199.8906 L109.2656,200.9844 C109.2656,202.6875 110.5625,203.7813 112.6094,203.7813 C113.375,203.7813 114.0625,203.6563 114.4844,203.3906 C114.6719,203.2969 114.6719,203.2969 115.125,202.8125 C115.3125,202.625 115.5156,202.5469 115.7344,202.5469 C116.2031,202.5469 116.5938,202.9375 116.5938,203.3906 C116.5938,203.7813 116.2656,204.2344 115.6875,204.6406 C114.9375,205.1875 113.7813,205.4844 112.5625,205.4844 C109.6719,205.4844 107.5625,203.5938 107.5625,201.0156 L107.5625,199.8906 C107.5625,197.1719 109.5625,195.0938 112.1875,195.0938 C113.0625,195.0938 113.6563,195.2344 114.5938,195.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146"
+              x="132.75" y="204.1543">MathematicalOperation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="372" y1="216" y2="216"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128"
+              x="12" y="230.2104">private double result_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="372" y1="236.8047" y2="236.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180"
+              x="12" y="251.0151">public MathematicalOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="355"
+              x="12" y="263.8198">public void solve(String operation) throws OperationException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="12" y="276.6245">public String toString();
+        </text><!--class Calculator-->
+        <rect fill="#FEFECE" filter="url(#f1fnp00yo5nlgc)" height="99.2188" id="Calculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="210" x="84.5" y="360"/>
+        <ellipse cx="153.75" cy="376" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M156.0938,371.6719 L156.2656,371.75 C156.4844,371.4375 156.6875,371.3438 156.9844,371.3438 C157.2813,371.3438 157.5625,371.4844 157.7188,371.75 C157.8125,371.9063 157.8281,372.0313 157.8281,372.4688 L157.8281,373.8906 C157.8281,374.3125 157.7969,374.5 157.6875,374.6563 C157.5156,374.875 157.25,375.0156 156.9844,375.0156 C156.7656,375.0156 156.5313,374.9063 156.3906,374.7656 C156.25,374.6406 156.2188,374.5156 156.1563,374.1094 C156.0625,373.7031 155.8906,373.4844 155.4063,373.2031 C154.9375,372.9531 154.3281,372.7969 153.75,372.7969 C152.0156,372.7969 150.7656,374.1094 150.7656,375.8906 L150.7656,376.9844 C150.7656,378.6875 152.0625,379.7813 154.1094,379.7813 C154.875,379.7813 155.5625,379.6563 155.9844,379.3906 C156.1719,379.2969 156.1719,379.2969 156.625,378.8125 C156.8125,378.625 157.0156,378.5469 157.2344,378.5469 C157.7031,378.5469 158.0938,378.9375 158.0938,379.3906 C158.0938,379.7813 157.7656,380.2344 157.1875,380.6406 C156.4375,381.1875 155.2813,381.4844 154.0625,381.4844 C151.1719,381.4844 149.0625,379.5938 149.0625,377.0156 L149.0625,375.8906 C149.0625,373.1719 151.0625,371.0938 153.6875,371.0938 C154.5625,371.0938 155.1563,371.2344 156.0938,371.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="174.25" y="380.1543">Calculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="85.5" x2="293.5" y1="392" y2="392"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101"
+              x="90.5" y="406.2104">private int index_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="85.5" x2="293.5" y1="412.8047" y2="412.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="90.5" y="427.0151">public Calculator();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198"
+              x="90.5" y="439.8198">public void solve(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="90.5" y="452.6245">public String toString();
+        </text><!--link Operation to MathematicalOperation-->
+        <path d="M189.5,127.63 C189.5,146.479 189.5,166.496 189.5,183.936 " fill="none"
+              id="Operation-MathematicalOperation" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="182.5,127.432,189.5,107.432,196.5,127.432,182.5,127.432"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="190.5" y="150.0669">Inheritance
+        </text><!--link MathematicalOperation to Calculator-->
+        <path d="M189.5,283.432 C189.5,303.056 189.5,325.9 189.5,346.654 " fill="none"
+              id="MathematicalOperation-Calculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="189.5,359.9355,193.5,353.9355,189.5,347.9355,185.5,353.9355,189.5,359.9355"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="75"
+              x="190.5" y="326.0669">operations_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="182.0297" y="303.2105">*
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="180.9375" y="348.9722">1
+        </text><!--
+@startuml
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+	
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

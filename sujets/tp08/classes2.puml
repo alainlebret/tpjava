@@ -1,0 +1,44 @@
+@startuml
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class JFrame {
+}
+
+class SwingCalculator {
+    private JTextField tfOperation_;
+    private JTextArea taResult_;
+
+    public SwingCalculator();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+class TcpClient {
+    private int port_;
+    private Socket socket_;
+    private ObjectOutputStream output_;
+    private ObjectInputStream input_;
+
+    public TcpClient(int port);
+    public void connect(String server);
+    public String request(String request);
+    public void disconnect();
+}
+
+SwingCalculator "1" *-down- "1" TcpClient: client
+JFrame <|-down- SwingCalculator: Inheritance
+WindowListener <|-down- SwingCalculator: Inheritance
+ActionListener <|-down- SwingCalculator: Inheritance
+
+@enduml

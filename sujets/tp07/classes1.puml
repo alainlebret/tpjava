@@ -1,0 +1,47 @@
+@startuml
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class JFrame {
+}
+
+class SwingCalculator {
+    private JTextField tfOperation_;
+    private JTextArea taResult_;
+
+    public SwingCalculetor();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+class UdpSender {
+    private int port_;
+
+    public UdpSender(int port);
+    public void send(String destination, String message);
+}
+
+class UdpReceiver {
+    private int port_;
+
+    public UdpReceiver(int port);
+    public String receive();
+}
+
+SwingCalculator "1" *-up- "1" UdpSender: sender
+SwingCalculator "1" *-up- "1" UdpReceiver: receiver
+JFrame <|-down- SwingCalculator: Inheritance
+WindowListener <|-down- SwingCalculator: Inheritance
+ActionListener <|-down- SwingCalculator: Inheritance
+
+@enduml

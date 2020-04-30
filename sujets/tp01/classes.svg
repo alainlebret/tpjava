@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="306px" preserveAspectRatio="none"
+     style="width:300px;height:306px;" version="1.1" viewBox="0 0 300 306" width="300px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1av26vyjernqf" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--class Calculator-->
+        <rect fill="#FEFECE" filter="url(#f1av26vyjernqf)" height="150.4375" id="Calculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="283" x="6" y="8"/>
+        <ellipse cx="111.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M114.0938,19.6719 L114.2656,19.75 C114.4844,19.4375 114.6875,19.3438 114.9844,19.3438 C115.2813,19.3438 115.5625,19.4844 115.7188,19.75 C115.8125,19.9063 115.8281,20.0313 115.8281,20.4688 L115.8281,21.8906 C115.8281,22.3125 115.7969,22.5 115.6875,22.6563 C115.5156,22.875 115.25,23.0156 114.9844,23.0156 C114.7656,23.0156 114.5313,22.9063 114.3906,22.7656 C114.25,22.6406 114.2188,22.5156 114.1563,22.1094 C114.0625,21.7031 113.8906,21.4844 113.4063,21.2031 C112.9375,20.9531 112.3281,20.7969 111.75,20.7969 C110.0156,20.7969 108.7656,22.1094 108.7656,23.8906 L108.7656,24.9844 C108.7656,26.6875 110.0625,27.7813 112.1094,27.7813 C112.875,27.7813 113.5625,27.6563 113.9844,27.3906 C114.1719,27.2969 114.1719,27.2969 114.625,26.8125 C114.8125,26.625 115.0156,26.5469 115.2344,26.5469 C115.7031,26.5469 116.0938,26.9375 116.0938,27.3906 C116.0938,27.7813 115.7656,28.2344 115.1875,28.6406 C114.4375,29.1875 113.2813,29.4844 112.0625,29.4844 C109.1719,29.4844 107.0625,27.5938 107.0625,25.0156 L107.0625,23.8906 C107.0625,21.1719 109.0625,19.0938 111.6875,19.0938 C112.5625,19.0938 113.1563,19.2344 114.0938,19.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="132.25" y="28.1543">Calculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="288" y1="40" y2="40"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="12" y="54.2104">double operande1_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="113"
+              x="12" y="67.0151">double operande2_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88"
+              x="12" y="79.8198">char operator_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85"
+              x="12" y="92.6245">double result_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="288" y1="99.2188" y2="99.2188"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="12" y="113.4292">public Calculator();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271"
+              x="12" y="126.2339">public void splitUsingScanner(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198"
+              x="12" y="139.0386">public void solve(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="12" y="151.8433">public String toString();
+        </text><!--class Main-->
+        <rect fill="#FEFECE" filter="url(#f1av26vyjernqf)" height="60.8047" id="Main"
+              style="stroke: #A80036; stroke-width: 1.5;" width="223" x="36" y="235"/>
+        <ellipse cx="128.75" cy="251" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M131.0938,246.6719 L131.2656,246.75 C131.4844,246.4375 131.6875,246.3438 131.9844,246.3438 C132.2813,246.3438 132.5625,246.4844 132.7188,246.75 C132.8125,246.9063 132.8281,247.0313 132.8281,247.4688 L132.8281,248.8906 C132.8281,249.3125 132.7969,249.5 132.6875,249.6563 C132.5156,249.875 132.25,250.0156 131.9844,250.0156 C131.7656,250.0156 131.5313,249.9063 131.3906,249.7656 C131.25,249.6406 131.2188,249.5156 131.1563,249.1094 C131.0625,248.7031 130.8906,248.4844 130.4063,248.2031 C129.9375,247.9531 129.3281,247.7969 128.75,247.7969 C127.0156,247.7969 125.7656,249.1094 125.7656,250.8906 L125.7656,251.9844 C125.7656,253.6875 127.0625,254.7813 129.1094,254.7813 C129.875,254.7813 130.5625,254.6563 130.9844,254.3906 C131.1719,254.2969 131.1719,254.2969 131.625,253.8125 C131.8125,253.625 132.0156,253.5469 132.2344,253.5469 C132.7031,253.5469 133.0938,253.9375 133.0938,254.3906 C133.0938,254.7813 132.7656,255.2344 132.1875,255.6406 C131.4375,256.1875 130.2813,256.4844 129.0625,256.4844 C126.1719,256.4844 124.0625,254.5938 124.0625,252.0156 L124.0625,250.8906 C124.0625,248.1719 126.0625,246.0938 128.6875,246.0938 C129.5625,246.0938 130.1563,246.2344 131.0938,246.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29"
+              x="149.25" y="255.1543">Main
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="37" x2="258" y1="267" y2="267"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="37" x2="258" y1="275" y2="275"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="211"
+              x="42" y="289.2104">public static void main(String[] args);
+        </text><!--link Calculator to Main-->
+        <path d="M147.5,158.198 C147.5,185.035 147.5,213.8281 147.5,234.6704 " fill="none" id="Calculator-Main"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="148.5" y="201.0669">calculator
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="139.1063" y="178.3905">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="138.675" y="223.8657">1
+        </text><!--
+@startuml
+class Calculator {
+    double operande1_;
+    double operande2_;
+    char operator_;
+    double result_;
+
+    public Calculator();
+    public void splitUsingScanner(String operation);
+    public void solve(String operation);
+    public String toString();
+}
+
+class Main {
+    public static void main(String[] args);
+} 
+
+Main "1" -up- "1" Calculator: calculator
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

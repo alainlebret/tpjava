@@ -1,0 +1,76 @@
+@startuml
+
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void calculer(String operation);
+    public String toString();
+} 
+
+class BackupCalculator {
+    public BackupCalculator(int uneTaille);
+    public void save();
+}
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class JFrame {
+}
+
+class SwingUI {
+    private JTextField tfOperation_;
+    private JTextArea taResult_;
+
+    public SwingUI();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+class TextFile {
+    private BufferedWriter fW_;
+    private BufferedReader fR_;
+    private char mode_;
+
+    public void open(String filename, String mode) throws IOException;
+    public void close() throws IOException;
+    public String read() throws IOException;
+    public void write(String s) throws IOException;
+}
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+BackupCalculator "1" *-up- "1" TextFile: ft_
+Calculator <|-down- BackupCalculator: Inheritance
+SwingUI "1" *-up- "1" BackupCalculator: calculator_
+JFrame <|-down- SwingUI: Inheritance
+WindowListener <|-down- SwingUI: Inheritance
+ActionListener <|-down- SwingUI: Inheritance
+
+@enduml

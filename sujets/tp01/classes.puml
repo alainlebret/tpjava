@@ -1,0 +1,21 @@
+@startuml
+
+class Calculator {
+    double operande1_;
+    double operande2_;
+    char operator_;
+    double result_;
+
+    public Calculator();
+    public void splitUsingScanner(String operation);
+    public void solve(String operation);
+    public String toString();
+}
+
+class Main {
+    public static void main(String[] args);
+} 
+
+Main "1" -up- "1" Calculator: calculator
+
+@enduml

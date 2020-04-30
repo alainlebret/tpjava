@@ -1,0 +1,58 @@
+@startuml
+
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String uneOperation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class JFrame {
+}
+
+class SwingUI {
+    private JTextField tfOperation_;
+    private JTextArea taResult_;
+
+    public SwingUI();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+SwingUI "1" *-up- "1" Calculator: calculator_
+JFrame <|-down- SwingUI: Inheritance
+WindowListener <|-down- SwingUI: Inheritance
+ActionListener <|-down- SwingUI: Inheritance
+
+@enduml

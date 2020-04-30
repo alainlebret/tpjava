@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="925px" preserveAspectRatio="none"
+     style="width:989px;height:925px;" version="1.1" viewBox="0 0 989 925" width="989px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="f1x7kt2obit49u" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--class Operation-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="99.2188" id="Operation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="254" x="667.5" y="8"/>
+        <ellipse cx="759.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M761.5938,19.6719 L761.7656,19.75 C761.9844,19.4375 762.1875,19.3438 762.4844,19.3438 C762.7813,19.3438 763.0625,19.4844 763.2188,19.75 C763.3125,19.9063 763.3281,20.0313 763.3281,20.4688 L763.3281,21.8906 C763.3281,22.3125 763.2969,22.5 763.1875,22.6563 C763.0156,22.875 762.75,23.0156 762.4844,23.0156 C762.2656,23.0156 762.0313,22.9063 761.8906,22.7656 C761.75,22.6406 761.7188,22.5156 761.6563,22.1094 C761.5625,21.7031 761.3906,21.4844 760.9063,21.2031 C760.4375,20.9531 759.8281,20.7969 759.25,20.7969 C757.5156,20.7969 756.2656,22.1094 756.2656,23.8906 L756.2656,24.9844 C756.2656,26.6875 757.5625,27.7813 759.6094,27.7813 C760.375,27.7813 761.0625,27.6563 761.4844,27.3906 C761.6719,27.2969 761.6719,27.2969 762.125,26.8125 C762.3125,26.625 762.5156,26.5469 762.7344,26.5469 C763.2031,26.5469 763.5938,26.9375 763.5938,27.3906 C763.5938,27.7813 763.2656,28.2344 762.6875,28.6406 C761.9375,29.1875 760.7813,29.4844 759.5625,29.4844 C756.6719,29.4844 754.5625,27.5938 754.5625,25.0156 L754.5625,23.8906 C754.5625,21.1719 756.5625,19.0938 759.1875,19.0938 C760.0625,19.0938 760.6563,19.2344 761.5938,19.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="779.75" y="28.1543">Operation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="668.5" x2="920.5" y1="40" y2="40"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145"
+              x="673.5" y="54.2104">private String operation_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="668.5" x2="920.5" y1="60.8047" y2="60.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105"
+              x="673.5" y="75.0151">public Operation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161"
+              x="673.5" y="87.8198">public String getOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242"
+              x="673.5" y="100.6245">public void setOperation(String operation);
+        </text><!--class MathematicalOperation-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="99.2188" id="MathematicalOperation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="367" x="611" y="184"/>
+        <ellipse cx="717.25" cy="200" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M719.5938,195.6719 L719.7656,195.75 C719.9844,195.4375 720.1875,195.3438 720.4844,195.3438 C720.7813,195.3438 721.0625,195.4844 721.2188,195.75 C721.3125,195.9063 721.3281,196.0313 721.3281,196.4688 L721.3281,197.8906 C721.3281,198.3125 721.2969,198.5 721.1875,198.6563 C721.0156,198.875 720.75,199.0156 720.4844,199.0156 C720.2656,199.0156 720.0313,198.9063 719.8906,198.7656 C719.75,198.6406 719.7188,198.5156 719.6563,198.1094 C719.5625,197.7031 719.3906,197.4844 718.9063,197.2031 C718.4375,196.9531 717.8281,196.7969 717.25,196.7969 C715.5156,196.7969 714.2656,198.1094 714.2656,199.8906 L714.2656,200.9844 C714.2656,202.6875 715.5625,203.7813 717.6094,203.7813 C718.375,203.7813 719.0625,203.6563 719.4844,203.3906 C719.6719,203.2969 719.6719,203.2969 720.125,202.8125 C720.3125,202.625 720.5156,202.5469 720.7344,202.5469 C721.2031,202.5469 721.5938,202.9375 721.5938,203.3906 C721.5938,203.7813 721.2656,204.2344 720.6875,204.6406 C719.9375,205.1875 718.7813,205.4844 717.5625,205.4844 C714.6719,205.4844 712.5625,203.5938 712.5625,201.0156 L712.5625,199.8906 C712.5625,197.1719 714.5625,195.0938 717.1875,195.0938 C718.0625,195.0938 718.6563,195.2344 719.5938,195.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146"
+              x="737.75" y="204.1543">MathematicalOperation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="612" x2="977" y1="216" y2="216"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128"
+              x="617" y="230.2104">private double result_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="612" x2="977" y1="236.8047" y2="236.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180"
+              x="617" y="251.0151">public MathematicalOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="355"
+              x="617" y="263.8198">public void solve(String operation) throws OperationException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="617" y="276.6245">public String toString();
+        </text><!--class Calculator-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="99.2188" id="Calculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="224" x="682.5" y="379.5"/>
+        <ellipse cx="758.75" cy="395.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M761.0938,391.1719 L761.2656,391.25 C761.4844,390.9375 761.6875,390.8438 761.9844,390.8438 C762.2813,390.8438 762.5625,390.9844 762.7188,391.25 C762.8125,391.4063 762.8281,391.5313 762.8281,391.9688 L762.8281,393.3906 C762.8281,393.8125 762.7969,394 762.6875,394.1563 C762.5156,394.375 762.25,394.5156 761.9844,394.5156 C761.7656,394.5156 761.5313,394.4063 761.3906,394.2656 C761.25,394.1406 761.2188,394.0156 761.1563,393.6094 C761.0625,393.2031 760.8906,392.9844 760.4063,392.7031 C759.9375,392.4531 759.3281,392.2969 758.75,392.2969 C757.0156,392.2969 755.7656,393.6094 755.7656,395.3906 L755.7656,396.4844 C755.7656,398.1875 757.0625,399.2813 759.1094,399.2813 C759.875,399.2813 760.5625,399.1563 760.9844,398.8906 C761.1719,398.7969 761.1719,398.7969 761.625,398.3125 C761.8125,398.125 762.0156,398.0469 762.2344,398.0469 C762.7031,398.0469 763.0938,398.4375 763.0938,398.8906 C763.0938,399.2813 762.7656,399.7344 762.1875,400.1406 C761.4375,400.6875 760.2813,400.9844 759.0625,400.9844 C756.1719,400.9844 754.0625,399.0938 754.0625,396.5156 L754.0625,395.3906 C754.0625,392.6719 756.0625,390.5938 758.6875,390.5938 C759.5625,390.5938 760.1563,390.7344 761.0938,391.1719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="779.25" y="399.6543">Calculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="683.5" x2="905.5" y1="411.5" y2="411.5"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101"
+              x="688.5" y="425.7104">private int index_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="683.5" x2="905.5" y1="432.3047" y2="432.3047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="688.5" y="446.5151">public Calculator();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="212"
+              x="688.5" y="459.3198">public void calculer(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="688.5" y="472.1245">public String toString();
+        </text><!--class BackupCalculator-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="73.6094" id="BackupCalculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="228" x="437.5" y="575"/>
+        <ellipse cx="492.75" cy="591" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M495.0938,586.6719 L495.2656,586.75 C495.4844,586.4375 495.6875,586.3438 495.9844,586.3438 C496.2813,586.3438 496.5625,586.4844 496.7188,586.75 C496.8125,586.9063 496.8281,587.0313 496.8281,587.4688 L496.8281,588.8906 C496.8281,589.3125 496.7969,589.5 496.6875,589.6563 C496.5156,589.875 496.25,590.0156 495.9844,590.0156 C495.7656,590.0156 495.5313,589.9063 495.3906,589.7656 C495.25,589.6406 495.2188,589.5156 495.1563,589.1094 C495.0625,588.7031 494.8906,588.4844 494.4063,588.2031 C493.9375,587.9531 493.3281,587.7969 492.75,587.7969 C491.0156,587.7969 489.7656,589.1094 489.7656,590.8906 L489.7656,591.9844 C489.7656,593.6875 491.0625,594.7813 493.1094,594.7813 C493.875,594.7813 494.5625,594.6563 494.9844,594.3906 C495.1719,594.2969 495.1719,594.2969 495.625,593.8125 C495.8125,593.625 496.0156,593.5469 496.2344,593.5469 C496.7031,593.5469 497.0938,593.9375 497.0938,594.3906 C497.0938,594.7813 496.7656,595.2344 496.1875,595.6406 C495.4375,596.1875 494.2813,596.4844 493.0625,596.4844 C490.1719,596.4844 488.0625,594.5938 488.0625,592.0156 L488.0625,590.8906 C488.0625,588.1719 490.0625,586.0938 492.6875,586.0938 C493.5625,586.0938 494.1563,586.2344 495.0938,586.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="109"
+              x="513.25" y="595.1543">BackupCalculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="438.5" x2="664.5" y1="607" y2="607"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="438.5" x2="664.5" y1="615" y2="615"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="216"
+              x="443.5" y="629.2104">public BackupCalculator(int uneTaille);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="103"
+              x="443.5" y="642.0151">public void save();
+        </text><!--class WindowListener-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="48" id="WindowListener"
+              style="stroke: #A80036; stroke-width: 1.5;" width="131" x="6" y="588"/>
+        <ellipse cx="21" cy="604" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M21.9531,600.7813 L21.9531,607.2969 L23.6719,607.2969 C24.125,607.2969 24.2656,607.3281 24.4375,607.4531 C24.6719,607.625 24.7813,607.875 24.7813,608.1563 C24.7813,608.7188 24.4219,609 23.6719,609 L18.5313,609 C18.125,609 17.9219,608.9531 17.7656,608.8281 C17.5469,608.6719 17.4063,608.4063 17.4063,608.1563 C17.4063,607.8594 17.5625,607.5781 17.8125,607.4219 C17.9688,607.3125 18.0938,607.2969 18.5313,607.2969 L20.25,607.2969 L20.25,600.7813 L18.5313,600.7813 C18.1094,600.7813 17.9219,600.75 17.7656,600.6406 C17.5469,600.4688 17.4063,600.2188 17.4063,599.9375 C17.4063,599.6563 17.5625,599.3594 17.8125,599.2031 C17.9688,599.1094 18.0938,599.0938 18.5313,599.0938 L23.6719,599.0938 C24.125,599.0938 24.2656,599.125 24.4375,599.2344 C24.6719,599.4063 24.7813,599.6719 24.7813,599.9375 C24.7813,600.2344 24.6406,600.5156 24.375,600.6719 C24.25,600.75 24.0625,600.7813 23.6719,600.7813 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="99" x="35" y="608.1543">WindowListener
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="136" y1="620" y2="620"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="136" y1="628" y2="628"/><!--class ActionListener-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="48" id="ActionListener"
+              style="stroke: #A80036; stroke-width: 1.5;" width="121" x="172" y="588"/>
+        <ellipse cx="187" cy="604" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M187.9531,600.7813 L187.9531,607.2969 L189.6719,607.2969 C190.125,607.2969 190.2656,607.3281 190.4375,607.4531 C190.6719,607.625 190.7813,607.875 190.7813,608.1563 C190.7813,608.7188 190.4219,609 189.6719,609 L184.5313,609 C184.125,609 183.9219,608.9531 183.7656,608.8281 C183.5469,608.6719 183.4063,608.4063 183.4063,608.1563 C183.4063,607.8594 183.5625,607.5781 183.8125,607.4219 C183.9688,607.3125 184.0938,607.2969 184.5313,607.2969 L186.25,607.2969 L186.25,600.7813 L184.5313,600.7813 C184.1094,600.7813 183.9219,600.75 183.7656,600.6406 C183.5469,600.4688 183.4063,600.2188 183.4063,599.9375 C183.4063,599.6563 183.5625,599.3594 183.8125,599.2031 C183.9688,599.1094 184.0938,599.0938 184.5313,599.0938 L189.6719,599.0938 C190.125,599.0938 190.2656,599.125 190.4375,599.2344 C190.6719,599.4063 190.7813,599.6719 190.7813,599.9375 C190.7813,600.2344 190.6406,600.5156 190.375,600.6719 C190.25,600.75 190.0625,600.7813 189.6719,600.7813 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="89" x="201" y="608.1543">ActionListener
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="292" y1="620" y2="620"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="292" y1="628" y2="628"/><!--class JFrame-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="48" id="JFrame"
+              style="stroke: #A80036; stroke-width: 1.5;" width="74" x="328.5" y="588"/>
+        <ellipse cx="343.5" cy="604" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M345.8438,599.6719 L346.0156,599.75 C346.2344,599.4375 346.4375,599.3438 346.7344,599.3438 C347.0313,599.3438 347.3125,599.4844 347.4688,599.75 C347.5625,599.9063 347.5781,600.0313 347.5781,600.4688 L347.5781,601.8906 C347.5781,602.3125 347.5469,602.5 347.4375,602.6563 C347.2656,602.875 347,603.0156 346.7344,603.0156 C346.5156,603.0156 346.2813,602.9063 346.1406,602.7656 C346,602.6406 345.9688,602.5156 345.9063,602.1094 C345.8125,601.7031 345.6406,601.4844 345.1563,601.2031 C344.6875,600.9531 344.0781,600.7969 343.5,600.7969 C341.7656,600.7969 340.5156,602.1094 340.5156,603.8906 L340.5156,604.9844 C340.5156,606.6875 341.8125,607.7813 343.8594,607.7813 C344.625,607.7813 345.3125,607.6563 345.7344,607.3906 C345.9219,607.2969 345.9219,607.2969 346.375,606.8125 C346.5625,606.625 346.7656,606.5469 346.9844,606.5469 C347.4531,606.5469 347.8438,606.9375 347.8438,607.3906 C347.8438,607.7813 347.5156,608.2344 346.9375,608.6406 C346.1875,609.1875 345.0313,609.4844 343.8125,609.4844 C340.9219,609.4844 338.8125,607.5938 338.8125,605.0156 L338.8125,603.8906 C338.8125,601.1719 340.8125,599.0938 343.4375,599.0938 C344.3125,599.0938 344.9063,599.2344 345.8438,599.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42"
+              x="357.5" y="608.1543">JFrame
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="329.5" x2="401.5" y1="620" y2="620"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="329.5" x2="401.5" y1="628" y2="628"/><!--class SwingUI-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="188.8516" id="SwingUI"
+              style="stroke: #A80036; stroke-width: 1.5;" width="290" x="153.5" y="726"/>
+        <ellipse cx="270.25" cy="742" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M272.5938,737.6719 L272.7656,737.75 C272.9844,737.4375 273.1875,737.3438 273.4844,737.3438 C273.7813,737.3438 274.0625,737.4844 274.2188,737.75 C274.3125,737.9063 274.3281,738.0313 274.3281,738.4688 L274.3281,739.8906 C274.3281,740.3125 274.2969,740.5 274.1875,740.6563 C274.0156,740.875 273.75,741.0156 273.4844,741.0156 C273.2656,741.0156 273.0313,740.9063 272.8906,740.7656 C272.75,740.6406 272.7188,740.5156 272.6563,740.1094 C272.5625,739.7031 272.3906,739.4844 271.9063,739.2031 C271.4375,738.9531 270.8281,738.7969 270.25,738.7969 C268.5156,738.7969 267.2656,740.1094 267.2656,741.8906 L267.2656,742.9844 C267.2656,744.6875 268.5625,745.7813 270.6094,745.7813 C271.375,745.7813 272.0625,745.6563 272.4844,745.3906 C272.6719,745.2969 272.6719,745.2969 273.125,744.8125 C273.3125,744.625 273.5156,744.5469 273.7344,744.5469 C274.2031,744.5469 274.5938,744.9375 274.5938,745.3906 C274.5938,745.7813 274.2656,746.2344 273.6875,746.6406 C272.9375,747.1875 271.7813,747.4844 270.5625,747.4844 C267.6719,747.4844 265.5625,745.5938 265.5625,743.0156 L265.5625,741.8906 C265.5625,739.1719 267.5625,737.0938 270.1875,737.0938 C271.0625,737.0938 271.6563,737.2344 272.5938,737.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="48"
+              x="290.75" y="746.1543">SwingUI
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="154.5" x2="442.5" y1="758" y2="758"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="174"
+              x="159.5" y="772.2104">private JTextField tfOperation_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="156"
+              x="159.5" y="785.0151">private JTextArea taResult_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="154.5" x2="442.5" y1="791.6094" y2="791.6094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94"
+              x="159.5" y="805.8198">public SwingUI();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="263"
+              x="159.5" y="818.6245">public void windowActivated(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="278"
+              x="159.5" y="831.4292">public void windowDeactivated(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="251"
+              x="159.5" y="844.2339">public void windowClosed(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254"
+              x="159.5" y="857.0386">public void windowClosing(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259"
+              x="159.5" y="869.8433">public void windowIconified(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274"
+              x="159.5" y="882.6479">public void windowDeiconified(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256"
+              x="159.5" y="895.4526">public void windowOpened(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256"
+              x="159.5" y="908.2573">public void actionPerformed(ActionEvent evt);
+        </text><!--class TextFile-->
+        <rect fill="#FEFECE" filter="url(#f1x7kt2obit49u)" height="137.6328" id="TextFile"
+              style="stroke: #A80036; stroke-width: 1.5;" width="394" x="253.5" y="360"/>
+        <ellipse cx="422.75" cy="376" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M425.0938,371.6719 L425.2656,371.75 C425.4844,371.4375 425.6875,371.3438 425.9844,371.3438 C426.2813,371.3438 426.5625,371.4844 426.7188,371.75 C426.8125,371.9063 426.8281,372.0313 426.8281,372.4688 L426.8281,373.8906 C426.8281,374.3125 426.7969,374.5 426.6875,374.6563 C426.5156,374.875 426.25,375.0156 425.9844,375.0156 C425.7656,375.0156 425.5313,374.9063 425.3906,374.7656 C425.25,374.6406 425.2188,374.5156 425.1563,374.1094 C425.0625,373.7031 424.8906,373.4844 424.4063,373.2031 C423.9375,372.9531 423.3281,372.7969 422.75,372.7969 C421.0156,372.7969 419.7656,374.1094 419.7656,375.8906 L419.7656,376.9844 C419.7656,378.6875 421.0625,379.7813 423.1094,379.7813 C423.875,379.7813 424.5625,379.6563 424.9844,379.3906 C425.1719,379.2969 425.1719,379.2969 425.625,378.8125 C425.8125,378.625 426.0156,378.5469 426.2344,378.5469 C426.7031,378.5469 427.0938,378.9375 427.0938,379.3906 C427.0938,379.7813 426.7656,380.2344 426.1875,380.6406 C425.4375,381.1875 424.2813,381.4844 423.0625,381.4844 C420.1719,381.4844 418.0625,379.5938 418.0625,377.0156 L418.0625,375.8906 C418.0625,373.1719 420.0625,371.0938 422.6875,371.0938 C423.5625,371.0938 424.1563,371.2344 425.0938,371.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="47"
+              x="443.25" y="380.1543">TextFile
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="254.5" x2="646.5" y1="392" y2="392"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152"
+              x="259.5" y="406.2104">private BufferedWriter fW_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="157"
+              x="259.5" y="419.0151">private BufferedReader fR_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="114"
+              x="259.5" y="431.8198">private char mode_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="254.5" x2="646.5" y1="438.4141" y2="438.4141"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="382"
+              x="259.5" y="452.6245">public void open(String filename, String mode) throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="219"
+              x="259.5" y="465.4292">public void close() throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="226"
+              x="259.5" y="478.2339">public String read() throws IOException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262"
+              x="259.5" y="491.0386">public void write(String s) throws IOException;
+        </text><!--link Operation to MathematicalOperation-->
+        <path d="M794.5,127.63 C794.5,146.479 794.5,166.496 794.5,183.936 " fill="none"
+              id="Operation-MathematicalOperation" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="787.5,127.432,794.5,107.432,801.5,127.432,787.5,127.432"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="795.5" y="150.0669">Inheritance
+        </text><!--link MathematicalOperation to Calculator-->
+        <path d="M794.5,283.328 C794.5,308.422 794.5,339.269 794.5,366.025 " fill="none"
+              id="MathematicalOperation-Calculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="794.5,379.187,798.5,373.187,794.5,367.187,790.5,373.187,794.5,379.187"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="75"
+              x="795.5" y="326.0669">operations_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="787.0078" y="303.4506">*
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="785.9625" y="368.5467">1
+        </text><!--link TextFile to BackupCalculator-->
+        <path d="M488.54,498.17 C500.637,519.849 513.751,543.351 524.863,563.265 " fill="none"
+              id="TextFile-BackupCalculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="531.324,574.843,531.8926,567.6543,525.4756,564.3646,524.907,571.5533,531.324,574.843"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="16"
+              x="513.5" y="541.0669">ft_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="483.8908" y="517.8087">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="519.0177" y="564.002">1
+        </text><!--link Calculator to BackupCalculator-->
+        <path d="M713.184,490.569 C675.729,518.468 632.532,550.643 600.216,574.714 " fill="none"
+              id="Calculator-BackupCalculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="709.159,484.838,729.38,478.505,717.522,496.066,709.159,484.838"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="658.5" y="541.0669">Inheritance
+        </text><!--link BackupCalculator to SwingUI-->
+        <path d="M507.141,649.206 C483.65,668.38 453.5,692.988 423.466,717.502 " fill="none"
+              id="BackupCalculator-SwingUI" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="413.295,725.804,420.4725,725.1091,422.5916,718.2164,415.4141,718.9113,413.295,725.804"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69"
+              x="470.5" y="692.0669">calculator_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="491.1315" y="668.7207">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="413.7777" y="715.0573">1
+        </text><!--link JFrame to SwingUI-->
+        <path d="M351.712,655.496 C345.107,675.853 336.916,701.1 328.955,725.635 " fill="none" id="JFrame-SwingUI"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="345.114,653.15,357.944,636.287,358.43,657.471,345.114,653.15"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="345.5" y="692.0669">Inheritance
+        </text><!--link WindowListener to SwingUI-->
+        <path d="M112.043,649.882 C135.429,671.156 165.987,698.954 195.578,725.873 " fill="none"
+              id="WindowListener-SwingUI" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="107.183,654.923,97.0985,636.287,116.603,644.567,107.183,654.923"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="159.5" y="692.0669">Inheritance
+        </text><!--link ActionListener to SwingUI-->
+        <path d="M239.873,656.295 C242.468,669.187 245.702,683.268 249.5,696 C252.401,705.726 255.752,715.757 259.313,725.701 "
+              fill="none" id="ActionListener-SwingUI" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="232.905,657.112,236.121,636.168,246.667,654.546,232.905,657.112"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="250.5" y="692.0669">Inheritance
+        </text><!--
+@startuml
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void calculer(String operation);
+    public String toString();
+} 
+
+class BackupCalculator {
+    public BackupCalculator(int uneTaille);
+    public void save();
+}
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class JFrame {
+}
+
+class SwingUI {
+    private JTextField tfOperation_;
+    private JTextArea taResult_;
+
+    public SwingUI();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+class TextFile {
+    private BufferedWriter fW_;
+    private BufferedReader fR_;
+    private char mode_;
+
+    public void open(String filename, String mode) throws IOException;
+    public void close() throws IOException;
+    public String read() throws IOException;
+    public void write(String s) throws IOException;
+}
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+BackupCalculator "1" *-up- "1" TextFile: ft_
+Calculator <|-down- BackupCalculator: Inheritance
+SwingUI "1" *-up- "1" BackupCalculator: calculator_
+JFrame <|-down- SwingUI: Inheritance
+WindowListener <|-down- SwingUI: Inheritance
+ActionListener <|-down- SwingUI: Inheritance
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>

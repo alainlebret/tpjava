@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     contentScriptType="application/ecmascript" contentStyleType="text/css" height="735px" preserveAspectRatio="none"
+     style="width:734px;height:735px;" version="1.1" viewBox="0 0 734 735" width="734px" zoomAndPan="magnify">
+    <defs>
+        <filter height="300%" id="faekqdazr9uuy" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g><!--class Operation-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="99.2188" id="Operation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="254" x="412.5" y="8"/>
+        <ellipse cx="504.25" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M506.5938,19.6719 L506.7656,19.75 C506.9844,19.4375 507.1875,19.3438 507.4844,19.3438 C507.7813,19.3438 508.0625,19.4844 508.2188,19.75 C508.3125,19.9063 508.3281,20.0313 508.3281,20.4688 L508.3281,21.8906 C508.3281,22.3125 508.2969,22.5 508.1875,22.6563 C508.0156,22.875 507.75,23.0156 507.4844,23.0156 C507.2656,23.0156 507.0313,22.9063 506.8906,22.7656 C506.75,22.6406 506.7188,22.5156 506.6563,22.1094 C506.5625,21.7031 506.3906,21.4844 505.9063,21.2031 C505.4375,20.9531 504.8281,20.7969 504.25,20.7969 C502.5156,20.7969 501.2656,22.1094 501.2656,23.8906 L501.2656,24.9844 C501.2656,26.6875 502.5625,27.7813 504.6094,27.7813 C505.375,27.7813 506.0625,27.6563 506.4844,27.3906 C506.6719,27.2969 506.6719,27.2969 507.125,26.8125 C507.3125,26.625 507.5156,26.5469 507.7344,26.5469 C508.2031,26.5469 508.5938,26.9375 508.5938,27.3906 C508.5938,27.7813 508.2656,28.2344 507.6875,28.6406 C506.9375,29.1875 505.7813,29.4844 504.5625,29.4844 C501.6719,29.4844 499.5625,27.5938 499.5625,25.0156 L499.5625,23.8906 C499.5625,21.1719 501.5625,19.0938 504.1875,19.0938 C505.0625,19.0938 505.6563,19.2344 506.5938,19.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62"
+              x="524.75" y="28.1543">Operation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="413.5" x2="665.5" y1="40" y2="40"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="145"
+              x="418.5" y="54.2104">private String operation_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="413.5" x2="665.5" y1="60.8047" y2="60.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="105"
+              x="418.5" y="75.0151">public Operation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="161"
+              x="418.5" y="87.8198">public String getOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="242"
+              x="418.5" y="100.6245">public void setOperation(String operation);
+        </text><!--class MathematicalOperation-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="99.2188" id="MathematicalOperation"
+              style="stroke: #A80036; stroke-width: 1.5;" width="367" x="356" y="184"/>
+        <ellipse cx="462.25" cy="200" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M464.5938,195.6719 L464.7656,195.75 C464.9844,195.4375 465.1875,195.3438 465.4844,195.3438 C465.7813,195.3438 466.0625,195.4844 466.2188,195.75 C466.3125,195.9063 466.3281,196.0313 466.3281,196.4688 L466.3281,197.8906 C466.3281,198.3125 466.2969,198.5 466.1875,198.6563 C466.0156,198.875 465.75,199.0156 465.4844,199.0156 C465.2656,199.0156 465.0313,198.9063 464.8906,198.7656 C464.75,198.6406 464.7188,198.5156 464.6563,198.1094 C464.5625,197.7031 464.3906,197.4844 463.9063,197.2031 C463.4375,196.9531 462.8281,196.7969 462.25,196.7969 C460.5156,196.7969 459.2656,198.1094 459.2656,199.8906 L459.2656,200.9844 C459.2656,202.6875 460.5625,203.7813 462.6094,203.7813 C463.375,203.7813 464.0625,203.6563 464.4844,203.3906 C464.6719,203.2969 464.6719,203.2969 465.125,202.8125 C465.3125,202.625 465.5156,202.5469 465.7344,202.5469 C466.2031,202.5469 466.5938,202.9375 466.5938,203.3906 C466.5938,203.7813 466.2656,204.2344 465.6875,204.6406 C464.9375,205.1875 463.7813,205.4844 462.5625,205.4844 C459.6719,205.4844 457.5625,203.5938 457.5625,201.0156 L457.5625,199.8906 C457.5625,197.1719 459.5625,195.0938 462.1875,195.0938 C463.0625,195.0938 463.6563,195.2344 464.5938,195.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="146"
+              x="482.75" y="204.1543">MathematicalOperation
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="357" x2="722" y1="216" y2="216"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="128"
+              x="362" y="230.2104">private double result_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="357" x2="722" y1="236.8047" y2="236.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="180"
+              x="362" y="251.0151">public MathematicalOperation();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="355"
+              x="362" y="263.8198">public void solve(String operation) throws OperationException;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="362" y="276.6245">public String toString();
+        </text><!--class Calculator-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="99.2188" id="Calculator"
+              style="stroke: #A80036; stroke-width: 1.5;" width="210" x="434.5" y="360"/>
+        <ellipse cx="503.75" cy="376" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M506.0938,371.6719 L506.2656,371.75 C506.4844,371.4375 506.6875,371.3438 506.9844,371.3438 C507.2813,371.3438 507.5625,371.4844 507.7188,371.75 C507.8125,371.9063 507.8281,372.0313 507.8281,372.4688 L507.8281,373.8906 C507.8281,374.3125 507.7969,374.5 507.6875,374.6563 C507.5156,374.875 507.25,375.0156 506.9844,375.0156 C506.7656,375.0156 506.5313,374.9063 506.3906,374.7656 C506.25,374.6406 506.2188,374.5156 506.1563,374.1094 C506.0625,373.7031 505.8906,373.4844 505.4063,373.2031 C504.9375,372.9531 504.3281,372.7969 503.75,372.7969 C502.0156,372.7969 500.7656,374.1094 500.7656,375.8906 L500.7656,376.9844 C500.7656,378.6875 502.0625,379.7813 504.1094,379.7813 C504.875,379.7813 505.5625,379.6563 505.9844,379.3906 C506.1719,379.2969 506.1719,379.2969 506.625,378.8125 C506.8125,378.625 507.0156,378.5469 507.2344,378.5469 C507.7031,378.5469 508.0938,378.9375 508.0938,379.3906 C508.0938,379.7813 507.7656,380.2344 507.1875,380.6406 C506.4375,381.1875 505.2813,381.4844 504.0625,381.4844 C501.1719,381.4844 499.0625,379.5938 499.0625,377.0156 L499.0625,375.8906 C499.0625,373.1719 501.0625,371.0938 503.6875,371.0938 C504.5625,371.0938 505.1563,371.2344 506.0938,371.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63"
+              x="524.25" y="380.1543">Calculator
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="435.5" x2="643.5" y1="392" y2="392"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101"
+              x="440.5" y="406.2104">private int index_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="435.5" x2="643.5" y1="412.8047" y2="412.8047"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106"
+              x="440.5" y="427.0151">public Calculator();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="198"
+              x="440.5" y="439.8198">public void solve(String operation);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132"
+              x="440.5" y="452.6245">public String toString();
+        </text><!--class WindowListener-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="48" id="WindowListener"
+              style="stroke: #A80036; stroke-width: 1.5;" width="131" x="6" y="385.5"/>
+        <ellipse cx="21" cy="401.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M21.9531,398.2813 L21.9531,404.7969 L23.6719,404.7969 C24.125,404.7969 24.2656,404.8281 24.4375,404.9531 C24.6719,405.125 24.7813,405.375 24.7813,405.6563 C24.7813,406.2188 24.4219,406.5 23.6719,406.5 L18.5313,406.5 C18.125,406.5 17.9219,406.4531 17.7656,406.3281 C17.5469,406.1719 17.4063,405.9063 17.4063,405.6563 C17.4063,405.3594 17.5625,405.0781 17.8125,404.9219 C17.9688,404.8125 18.0938,404.7969 18.5313,404.7969 L20.25,404.7969 L20.25,398.2813 L18.5313,398.2813 C18.1094,398.2813 17.9219,398.25 17.7656,398.1406 C17.5469,397.9688 17.4063,397.7188 17.4063,397.4375 C17.4063,397.1563 17.5625,396.8594 17.8125,396.7031 C17.9688,396.6094 18.0938,396.5938 18.5313,396.5938 L23.6719,396.5938 C24.125,396.5938 24.2656,396.625 24.4375,396.7344 C24.6719,396.9063 24.7813,397.1719 24.7813,397.4375 C24.7813,397.7344 24.6406,398.0156 24.375,398.1719 C24.25,398.25 24.0625,398.2813 23.6719,398.2813 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="99" x="35" y="405.6543">WindowListener
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="136" y1="417.5" y2="417.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="136" y1="425.5"
+              y2="425.5"/><!--class ActionListener-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="48" id="ActionListener"
+              style="stroke: #A80036; stroke-width: 1.5;" width="121" x="172" y="385.5"/>
+        <ellipse cx="187" cy="401.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M187.9531,398.2813 L187.9531,404.7969 L189.6719,404.7969 C190.125,404.7969 190.2656,404.8281 190.4375,404.9531 C190.6719,405.125 190.7813,405.375 190.7813,405.6563 C190.7813,406.2188 190.4219,406.5 189.6719,406.5 L184.5313,406.5 C184.125,406.5 183.9219,406.4531 183.7656,406.3281 C183.5469,406.1719 183.4063,405.9063 183.4063,405.6563 C183.4063,405.3594 183.5625,405.0781 183.8125,404.9219 C183.9688,404.8125 184.0938,404.7969 184.5313,404.7969 L186.25,404.7969 L186.25,398.2813 L184.5313,398.2813 C184.1094,398.2813 183.9219,398.25 183.7656,398.1406 C183.5469,397.9688 183.4063,397.7188 183.4063,397.4375 C183.4063,397.1563 183.5625,396.8594 183.8125,396.7031 C183.9688,396.6094 184.0938,396.5938 184.5313,396.5938 L189.6719,396.5938 C190.125,396.5938 190.2656,396.625 190.4375,396.7344 C190.6719,396.9063 190.7813,397.1719 190.7813,397.4375 C190.7813,397.7344 190.6406,398.0156 190.375,398.1719 C190.25,398.25 190.0625,398.2813 189.6719,398.2813 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs"
+              textLength="89" x="201" y="405.6543">ActionListener
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="292" y1="417.5" y2="417.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="292" y1="425.5" y2="425.5"/><!--class Frame-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="48" id="Frame"
+              style="stroke: #A80036; stroke-width: 1.5;" width="71" x="328" y="385.5"/>
+        <ellipse cx="343" cy="401.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M345.3438,397.1719 L345.5156,397.25 C345.7344,396.9375 345.9375,396.8438 346.2344,396.8438 C346.5313,396.8438 346.8125,396.9844 346.9688,397.25 C347.0625,397.4063 347.0781,397.5313 347.0781,397.9688 L347.0781,399.3906 C347.0781,399.8125 347.0469,400 346.9375,400.1563 C346.7656,400.375 346.5,400.5156 346.2344,400.5156 C346.0156,400.5156 345.7813,400.4063 345.6406,400.2656 C345.5,400.1406 345.4688,400.0156 345.4063,399.6094 C345.3125,399.2031 345.1406,398.9844 344.6563,398.7031 C344.1875,398.4531 343.5781,398.2969 343,398.2969 C341.2656,398.2969 340.0156,399.6094 340.0156,401.3906 L340.0156,402.4844 C340.0156,404.1875 341.3125,405.2813 343.3594,405.2813 C344.125,405.2813 344.8125,405.1563 345.2344,404.8906 C345.4219,404.7969 345.4219,404.7969 345.875,404.3125 C346.0625,404.125 346.2656,404.0469 346.4844,404.0469 C346.9531,404.0469 347.3438,404.4375 347.3438,404.8906 C347.3438,405.2813 347.0156,405.7344 346.4375,406.1406 C345.6875,406.6875 344.5313,406.9844 343.3125,406.9844 C340.4219,406.9844 338.3125,405.0938 338.3125,402.5156 L338.3125,401.3906 C338.3125,398.6719 340.3125,396.5938 342.9375,396.5938 C343.8125,396.5938 344.4063,396.7344 345.3438,397.1719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39"
+              x="357" y="405.6543">Frame
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="329" x2="398" y1="417.5" y2="417.5"/>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="329" x2="398" y1="425.5" y2="425.5"/><!--class AwtUI-->
+        <rect fill="#FEFECE" filter="url(#faekqdazr9uuy)" height="188.8516" id="AwtUI"
+              style="stroke: #A80036; stroke-width: 1.5;" width="290" x="152.5" y="536"/>
+        <ellipse cx="276.25" cy="552" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M278.5938,547.6719 L278.7656,547.75 C278.9844,547.4375 279.1875,547.3438 279.4844,547.3438 C279.7813,547.3438 280.0625,547.4844 280.2188,547.75 C280.3125,547.9063 280.3281,548.0313 280.3281,548.4688 L280.3281,549.8906 C280.3281,550.3125 280.2969,550.5 280.1875,550.6563 C280.0156,550.875 279.75,551.0156 279.4844,551.0156 C279.2656,551.0156 279.0313,550.9063 278.8906,550.7656 C278.75,550.6406 278.7188,550.5156 278.6563,550.1094 C278.5625,549.7031 278.3906,549.4844 277.9063,549.2031 C277.4375,548.9531 276.8281,548.7969 276.25,548.7969 C274.5156,548.7969 273.2656,550.1094 273.2656,551.8906 L273.2656,552.9844 C273.2656,554.6875 274.5625,555.7813 276.6094,555.7813 C277.375,555.7813 278.0625,555.6563 278.4844,555.3906 C278.6719,555.2969 278.6719,555.2969 279.125,554.8125 C279.3125,554.625 279.5156,554.5469 279.7344,554.5469 C280.2031,554.5469 280.5938,554.9375 280.5938,555.3906 C280.5938,555.7813 280.2656,556.2344 279.6875,556.6406 C278.9375,557.1875 277.7813,557.4844 276.5625,557.4844 C273.6719,557.4844 271.5625,555.5938 271.5625,553.0156 L271.5625,551.8906 C271.5625,549.1719 273.5625,547.0938 276.1875,547.0938 C277.0625,547.0938 277.6563,547.2344 278.5938,547.6719 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34"
+              x="296.75" y="556.1543">AwtUI
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="153.5" x2="441.5" y1="568" y2="568"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171"
+              x="158.5" y="582.2104">private TextField tfOperation_;
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="153"
+              x="158.5" y="595.0151">private TextArea taResult_;
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="153.5" x2="441.5" y1="601.6094" y2="601.6094"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80"
+              x="158.5" y="615.8198">public AwtUI();
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="263"
+              x="158.5" y="628.6245">public void windowActivated(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="278"
+              x="158.5" y="641.4292">public void windowDeactivated(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="251"
+              x="158.5" y="654.2339">public void windowClosed(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="254"
+              x="158.5" y="667.0386">public void windowClosing(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259"
+              x="158.5" y="679.8433">public void windowIconified(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274"
+              x="158.5" y="692.6479">public void windowDeiconified(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256"
+              x="158.5" y="705.4526">public void windowOpened(WindowEvent evt);
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="256"
+              x="158.5" y="718.2573">public void actionPerformed(ActionEvent evt);
+        </text><!--link Operation to MathematicalOperation-->
+        <path d="M539.5,127.63 C539.5,146.479 539.5,166.496 539.5,183.936 " fill="none"
+              id="Operation-MathematicalOperation" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="532.5,127.432,539.5,107.432,546.5,127.432,532.5,127.432"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="540.5" y="150.0669">Inheritance
+        </text><!--link MathematicalOperation to Calculator-->
+        <path d="M539.5,283.432 C539.5,303.056 539.5,325.9 539.5,346.654 " fill="none"
+              id="MathematicalOperation-Calculator" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036" points="539.5,359.936,543.5,353.936,539.5,347.936,535.5,353.936,539.5,359.936"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="75"
+              x="540.5" y="326.0669">operations_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7"
+              x="532.0297" y="303.2105">*
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="530.9375" y="348.9722">1
+        </text><!--link Calculator to AwtUI-->
+        <path d="M485.792,459.103 C463.69,479.104 437.197,503.08 411.158,526.645 " fill="none" id="Calculator-AwtUI"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="#A80036"
+                 points="401.21,535.646,408.3427,534.5857,410.1074,527.5939,402.9747,528.6542,401.21,535.646"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69"
+              x="447.5" y="502.0669">calculator_
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="469.6768" y="479.194">1
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8"
+              x="400.844" y="524.8872">1
+        </text><!--link Frame to AwtUI-->
+        <path d="M350.78,452.706 C343.653,476.356 334.465,506.845 325.731,535.823 " fill="none" id="Frame-AwtUI"
+              style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="344.088,450.652,356.562,433.523,357.493,454.692,344.088,450.652"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="339.5" y="502.0669">Inheritance
+        </text><!--link WindowListener to AwtUI-->
+        <path d="M106.814,448.184 C123.724,465.962 144.407,487.324 163.5,506 C173.451,515.734 183.94,525.77 194.488,535.717 "
+              fill="none" id="WindowListener-AwtUI" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="101.7171,452.981,93.0601,433.641,111.889,443.361,101.7171,452.981"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="164.5" y="502.0669">Inheritance
+        </text><!--link ActionListener to AwtUI-->
+        <path d="M237.136,453.591 C239.472,470.156 242.827,489.131 247.5,506 C250.217,515.808 253.477,525.894 257.014,535.871 "
+              fill="none" id="ActionListener-AwtUI" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <polygon fill="none" points="230.17,454.297,234.629,433.582,244.062,452.556,230.17,454.297"
+                 style="stroke: #A80036; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="71"
+              x="248.5" y="502.0669">Inheritance
+        </text><!--
+@startuml
+class Operation {
+    private String operation_;
+
+    public Operation(); 
+    public String getOperation();
+    public void setOperation(String operation);
+}
+
+class MathematicalOperation {
+    private double result_;
+
+    public MathematicalOperation();
+    public void solve(String operation) throws OperationException;
+    public String toString();
+} 
+
+class Calculator {
+    private int index_;
+
+    public Calculator();
+    public void solve(String operation);
+    public String toString();
+} 
+
+interface WindowListener {
+}
+
+interface ActionListener{
+}
+
+class Frame {
+}
+
+class AwtUI {
+    private TextField tfOperation_;
+    private TextArea taResult_;
+
+    public AwtUI();
+    public void windowActivated(WindowEvent evt);
+    public void windowDeactivated(WindowEvent evt);
+    public void windowClosed(WindowEvent evt);
+    public void windowClosing(WindowEvent evt);
+    public void windowIconified(WindowEvent evt);
+    public void windowDeiconified(WindowEvent evt);
+    public void windowOpened(WindowEvent evt);
+    public void actionPerformed(ActionEvent evt);
+} 
+
+Operation <|-down- MathematicalOperation: Inheritance
+Calculator "1" *-up- "*" MathematicalOperation: operations_
+AwtUI "1" *-up- "1" Calculator: calculator_
+Frame <|-down- AwtUI: Inheritance
+WindowListener <|-down- AwtUI: Inheritance
+ActionListener <|-down- AwtUI: Inheritance
+@enduml
+
+PlantUML version 1.2019.03(Sun Mar 10 11:04:44 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+    </g>
+</svg>
