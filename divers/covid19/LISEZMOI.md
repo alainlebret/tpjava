@@ -1,15 +1,18 @@
-# TP Covid-19
+# TP génome du SARS-CoV-2 (Covid-19)
+
 
 Voir la page [Wikipedia](https://fr.wikipedia.org/wiki/Code_génétique) pour plus d'information sur le code génétique. 
 
 ## Exercice n°1
 Proposer une application permettant d'extraire les gènes du Covid-19 et d'indiquer les polypeptides 
-(groupemens d'acides aminés) qui peuvent être générés. N'hésitez pas à créer autant de classes que 
+(groupements d'acides aminés) qui peuvent en être générés. N'hésitez pas à créer autant de classes que 
 nécessaire afin de faciliter la réutilisation.
 
-Comme point de départ, je vous propose les classes suivantes (voir mon [dépôt](https://gitlab.ecole.ensicaen.fr/alebret/tpjava/-/tree/master/divers/covid19) Gitlab de l'ENSICAEN -- _vous y accédez avec vos identifiants_ : 
+Comme point de départ, je vous propose les classes suivantes disponibles sur mon 
+[dépôt Gitlab](https://gitlab.ecole.ensicaen.fr/alebret/tpjava/-/tree/master/divers/covid19) 
+de l'ENSICAEN (*vous pouvez y accédez avec vos identifiants*) : 
 
-- `SarsCov2` : classe permettant de charger le génome du Covid-19 depuis le fichiers ressources "SARS-CoV-2.txt" (version chinoise)
+- `SarsCov2` : classe permettant de charger le génome du Covid-19 depuis le fichier ressources "SARS-CoV-2.txt" (version chinoise)
 - `AminoAcid` : classe permettant de définir un acide aminé.
 - `AminoAcids` : classe permettant de charger les informations de chaque acide aminé. 
 
@@ -24,11 +27,11 @@ Comme point de départ, je vous propose les classes suivantes (voir mon [dépôt
 
 ## Exercice n°2
 Complétez votre application en ajoutant les fonctionnalités suivantes :
-- Chargement d'une autre génome contenu dans un fichier texte (par exemple : la grippe H1N1, le HIV, etc.).
+- Chargement d'un autre génome contenu dans un fichier texte (par exemple : la grippe H1N1, le HIV, etc.).
 - Calcul de la distance de Hamming afin de comparer le génome du Covid-19 à d'autres génomes. 
 
-### À propos de la distance de Hamming
-Par définition, la distance de Hamming entre deux chaînes de même longueur est le nombre de positions auxquelles 
+#### À propos de la distance de Hamming
+Par définition, la distance de Hamming entre deux chaînes de même longueur est le nombre de positions pour lesquelles 
 les symboles correspondants sont différents. En d'autres termes, c'est le nombre de substitutions nécessaires 
 pour transformer une chaîne en une autre. Cette distance est intéressante pour observer des correspondances entre
 différents génomes.
