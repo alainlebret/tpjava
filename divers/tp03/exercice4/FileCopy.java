@@ -51,6 +51,7 @@ public class FileCopy {
                 Thread.sleep(_delay);
             } catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
+                break;
             }
         }
         is.close();
