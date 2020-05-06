@@ -28,6 +28,8 @@ L'ensemble des documents provient du cours d'introduction à la programmation Ja
 
 All the documents come from my course presented from 1996 to 2007. The folder ```divers``` contains Java code from some laboratory works at the ENSICAEN (since 2016). 
 
+(c) [Alain Lebret](mailto:alain.lebret@ensicaen.fr?subject=About%20your%20repo%20Javalab), 2020 
+
 ### Licensing
 
 * The documents (courses, laboratory work handouts and images<sup>[1]</sup>) are provided under the Creative Commons [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/) 
