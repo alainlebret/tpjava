@@ -2,6 +2,8 @@
 
 L'ensemble des documents provient du cours d'introduction à la programmation Java présenté de 1996 à 2007 en BTS informatique industrielle (transformé en BTS IRIS, puis nouvellement en BTS SN-IR). Le répertoire `divers` contient quelques codes associés aux TP Java dans lesquels j'interviens à l'ENSICAEN depuis 2016. 
 
+(c) [Alain Lebret](mailto:alain.lebret@ensicaen.fr?subject=[TP%20Java]%20A%20propos%20de%20vos%20TP), 2020 
+
 ### Licences
 
 * Les documents (cours, sujets de travaux pratiques et images<sup>[1]</sup>) sont fournis sous licence Creative Commons [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/) 
