@@ -19,32 +19,18 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package tp03.exercice4;
+package tp03.exercice3;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
+/**
+ */
+public interface Cypher {
 
-public class FileCopyAfterJava7 {
-
-    private final String source;
-    private final String destination;
-    private boolean finished;
-
-    public FileCopyAfterJava7(String in, String out) {
-        source = in;
-        destination = out;
-        finished = false;
-    }
-
-    private void copyFileUsingJava7Files() throws IOException {
-        File theSource = new File(this.source);
-        File theDestination = new File(destination);
-        Files.copy(theSource.toPath(), theDestination.toPath());
-        finished = true;
-    }
-
-    public boolean isFinished() {
-        return finished;
-    }
+    /**
+     * Encodes the given ASCII code of a character using a cipher. {@code character}
+     * must be in the range [65, 97].
+     *
+     * @param character The given ASCII code of an alphabet character.
+     * @return The ASCII code of the encoded character.
+     */
+    public int encode(int character);
 }

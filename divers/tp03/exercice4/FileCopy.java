@@ -25,30 +25,30 @@ import java.io.*;
 
 public class FileCopy {
 
-    private final String _source;
-    private final String _dest;
-    private int _delay;
-    private int _numberOfBytesCopied;
-    private boolean _finished;
+    private final String source;
+    private final String destination;
+    private int delay;
+    private int numberOfBytesCopied;
+    private boolean finished;
 
     public FileCopy(String source, String dest) {
-        _source = source;
-        _dest = dest;
-        _delay = 0;
-        _numberOfBytesCopied = 0;
-        _finished = false;
+        this.source = source;
+        destination = dest;
+        delay = 0;
+        numberOfBytesCopied = 0;
+        finished = false;
     }
 
     public void duplicateFile() throws IOException {
-        InputStream is = new FileInputStream(_source);
-        OutputStream os = new FileOutputStream(_dest);
+        InputStream is = new FileInputStream(source);
+        OutputStream os = new FileOutputStream(destination);
         int aByte;
 
         while ((aByte = is.read()) != -1) {
             os.write(aByte);
-            _numberOfBytesCopied++;
+            numberOfBytesCopied++;
             try {
-                Thread.sleep(_delay);
+                Thread.sleep(delay);
             } catch (InterruptedException ex) {
                 Thread.currentThread().interrupt();
                 break;
@@ -56,18 +56,18 @@ public class FileCopy {
         }
         is.close();
         os.close();
-        _finished = true;
+        finished = true;
     }
 
     public void setDelay(int delay) {
-        _delay = delay;
+        this.delay = delay;
     }
 
     public int getNumberOfBytesCopied() {
-        return _numberOfBytesCopied;
+        return numberOfBytesCopied;
     }
 
     public boolean isFinished() {
-        return _finished;
+        return finished;
     }
 }

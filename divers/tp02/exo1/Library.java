@@ -28,15 +28,15 @@ public class Library {
     /**
      * The maximum number of documents in the library.
      */
-    private final int _capacity;
+    private final int capacity;
     /**
      * The current number of documents in the library.
      */
-    private int _nbDocuments;
+    private int nbDocuments;
     /**
      * The documents of the library.
      */
-    private final Document[] _documents;
+    private final Document[] documents;
 
     /**
      * Creates a new library with a given capacity.
@@ -44,9 +44,9 @@ public class Library {
      * @param capacity The capacity of the library.
      */
     public Library(int capacity) {
-        _capacity = capacity;
-        _nbDocuments = 0;
-        _documents = new Document[capacity];
+        this.capacity = capacity;
+        nbDocuments = 0;
+        documents = new Document[capacity];
     }
 
     /**
@@ -55,7 +55,7 @@ public class Library {
      * @return The capacity of the library.
      */
     public int getCapacity() {
-        return _capacity;
+        return capacity;
     }
 
     /**
@@ -64,7 +64,7 @@ public class Library {
      * @return The number of documents in the library.
      */
     public int getNbDocuments() {
-        return _nbDocuments;
+        return nbDocuments;
     }
 
     /**
@@ -74,7 +74,7 @@ public class Library {
      * @return The document at the given index in the library.
      */
     public Document getDocument(int index) {
-        return _documents[index];
+        return documents[index];
     }
 
     /**
@@ -84,9 +84,9 @@ public class Library {
      * @throws DocumentException Exception thrown when the capacity is exceeded.
      */
     public void addDocument(Document document) throws DocumentException {
-        if (_nbDocuments < _capacity) {
-            _documents[_nbDocuments] = document;
-            _nbDocuments++;
+        if (nbDocuments < capacity) {
+            documents[nbDocuments] = document;
+            nbDocuments++;
         } else {
             throw new DocumentException("Unable to add a document in the library.");
         }
@@ -96,7 +96,7 @@ public class Library {
     public String toString() {
         StringBuilder content = new StringBuilder();
 
-        for (Document aDocument : _documents) {
+        for (Document aDocument : documents) {
             content.append(aDocument);
             content.append("\n");
         }

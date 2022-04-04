@@ -38,10 +38,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * See: https://howtodoinjava.com/junit5
  */
 public class WordOccurrencesTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    final String baseName = "divers/tp03/exercice2/ressources";
-    final String[] pathNames = {"test1.txt", "test2.txt"};
+    static final String BASENAME = "divers/tp03/exercice2/ressources";
+    final String[] fileNames = {"test1.txt", "test2.txt"};
 
     WordOccurrences occ1;
     WordOccurrences occ2;
@@ -51,8 +51,8 @@ public class WordOccurrencesTest {
         LOGGER.log(Level.INFO, "Testing class WordOccurrences");
         occ1 = new WordOccurrences();
         occ2 = new WordOccurrences();
-        occ1.read(baseName + "/" + pathNames[0]);
-        occ2.read(baseName + "/" + pathNames[1]);
+        occ1.read(BASENAME + "/" + fileNames[0]);
+        occ2.read(BASENAME + "/" + fileNames[1]);
     }
 
     @ParameterizedTest
@@ -61,10 +61,10 @@ public class WordOccurrencesTest {
     public void firstTestOfGetWordsAndOccurrences(String filename) {
         LOGGER.log(Level.INFO, "WordOccurrences::getWordsAndOccurrences(): " + filename);
         HashMap<String, Integer> keysAndValues;
-        if (pathNames[0].equals(filename)) {
+        if (fileNames[0].equals(filename)) {
             keysAndValues = occ1.getWordsAndOccurrences();
             assertEquals((Integer) 6, keysAndValues.get("opinion"));
-        } else if (pathNames[1].equals(filename)) {
+        } else if (fileNames[1].equals(filename)) {
             keysAndValues = occ2.getWordsAndOccurrences();
             assertEquals((Integer) 4, keysAndValues.get("Prince"));
             assertEquals((Integer) 5, keysAndValues.get("partez"));

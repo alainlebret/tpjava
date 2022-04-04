@@ -35,9 +35,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * See: https://howtodoinjava.com/junit5
  */
 public class RingBufferTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    final static String[] messages = {"message 1", "message 2", "message 3", "message 4", "message 5", "message 6",
+    static final String[] messages = {"message 1", "message 2", "message 3", "message 4", "message 5", "message 6",
             "message 7", "message 8", "message 9", "message 10", "message 11"};
     static int SIZE = 5;
     RingBuffer cb = new RingBuffer(SIZE);

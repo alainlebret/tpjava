@@ -28,11 +28,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class SarsCov2 {
-    private String _genome;
+    private String genome;
 
     public SarsCov2(String filename) {
         try {
-            _genome = readFile(filename, Charset.defaultCharset());
+            genome = readFile(filename, Charset.defaultCharset());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,7 +46,7 @@ public class SarsCov2 {
     @Override
     public String toString() {
         return "SarsCov2{" +
-                "_genome='" + _genome + '\'' +
+                "_genome='" + genome + '\'' +
                 '}';
     }
 

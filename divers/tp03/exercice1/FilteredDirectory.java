@@ -31,20 +31,20 @@ public class FilteredDirectory implements FilenameFilter {
     /**
      * Pathname of the directory.
      */
-    private final String _directory;
+    private final String directory;
 
     /**
      * File extension to filter.
      */
-    private final String _extension;
+    private final String extension;
 
     public FilteredDirectory(String directory, String extension) {
-        _directory = directory;
-        _extension = extension;
+        this.directory = directory;
+        this.extension = extension;
     }
 
     public String[] list() {
-        File path = new File(_directory);
+        File path = new File(directory);
         String[] files = null;
 
         if (path.exists() && path.isDirectory()) {
@@ -63,18 +63,14 @@ public class FilteredDirectory implements FilenameFilter {
 
     @Override
     public boolean accept(File directory, String file) {
-        boolean hasSpecificExtension = false;
-        if (file.endsWith(_extension)) {
-            hasSpecificExtension = true;
-        }
-        return hasSpecificExtension;
+        return file.endsWith(extension);
     }
 
     @Override
     public String toString() {
         return "FilteredDirectory{" +
-                "_directory='" + _directory + '\'' +
-                ", _extension='" + _extension + '\'' +
+                "_directory='" + directory + '\'' +
+                ", _extension='" + extension + '\'' +
                 '}';
     }
 }

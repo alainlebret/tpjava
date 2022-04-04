@@ -31,12 +31,12 @@ public class Document {
     /**
      * The number of the document.
      */
-    private int _number;
+    private int number;
 
     /**
      * The title of the document.
      */
-    private String _title;
+    private String title;
 
     /**
      * Creates a new document with a given number and a given title.
@@ -45,8 +45,8 @@ public class Document {
      * @param title  The title of the document.
      */
     public Document(int number, String title) {
-        _number = number;
-        _title = title;
+        this.number = number;
+        this.title = title;
     }
 
     /**
@@ -55,25 +55,25 @@ public class Document {
      * @param document The document
      */
     public Document(Document document) {
-        _number = document._number;
-        _title = document._title;
+        number = document.number;
+        title = document.title;
     }
 
     /* Accessor methods */
     public int getNumber() {
-        return _number;
+        return number;
     }
 
     public String getTitle() {
-        return _title;
+        return title;
     }
 
     public void setNumber(int number) {
-        _number = number;
+        this.number = number;
     }
 
     public void setTitle(String title) {
-        _title = title;
+        this.title = title;
     }
 
     /**
@@ -91,14 +91,14 @@ public class Document {
             return false;
         }
         Document d = (Document) o;
-        return _number == d._number && _title.equals(d._title);
+        return number == d.number && title.equals(d.title);
     }
 
     @Override
     public int hashCode() {
         int hashcode = 17;
-        hashcode = 31 * hashcode + _number;
-        hashcode = 31 * hashcode + _title.hashCode();
+        hashcode = 31 * hashcode + number;
+        hashcode = 31 * hashcode + title.hashCode();
         return hashcode;
     }
 
@@ -112,6 +112,6 @@ public class Document {
      */
     @Override
     public String toString() {
-        return String.format("[%06d]|%s", _number, _title);
+        return String.format("[%06d]|%s", number, title);
     }
 }

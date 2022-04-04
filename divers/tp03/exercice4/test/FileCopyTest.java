@@ -40,11 +40,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * See: https://howtodoinjava.com/junit5
  */
 public class FileCopyTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    final String baseName = "divers/tp03/exercice4/ressources";
-    String sourceFilename = baseName + "/test.txt";
-    String destFilename = baseName + "/test.cpy.txt";
+    static final String BASENAME = "divers/tp03/exercice4/ressources";
+    String sourceFilename = BASENAME + "/test.txt";
+    String destFilename = BASENAME + "/test.cpy.txt";
     FileCopy fc = new FileCopy(sourceFilename, destFilename);
 
     @BeforeEach

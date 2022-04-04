@@ -22,10 +22,10 @@
 package tp02.exo3;
 
 public class SortableInteger implements Sortable, Comparable<SortableInteger> {
-    private final Integer _value;
+    private final Integer value;
 
     public SortableInteger(String valeur) {
-        _value = Integer.valueOf(valeur);
+        value = Integer.valueOf(valeur);
     }
 
     @Override
@@ -33,23 +33,22 @@ public class SortableInteger implements Sortable, Comparable<SortableInteger> {
         if (o == this) {
             return true;
         }
-        if (!(o instanceof SortableInteger)) {
+        if (!(o instanceof SortableInteger anInteger)) {
             return false;
         }
-        SortableInteger anInteger = (SortableInteger) o;
-        return _value.equals(anInteger._value);
+        return value.equals(anInteger.value);
     }
 
     @Override
     public int compareTo(SortableInteger o) {
-        return _value.compareTo(o._value);
+        return value.compareTo(o.value);
     }
 
     public int getValue() {
-        return _value;
+        return value;
     }
 
     public String toString() {
-        return _value.toString();
+        return value.toString();
     }
 }

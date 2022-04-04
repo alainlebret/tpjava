@@ -25,51 +25,51 @@ package tp03.exercice5;
  * This is an old version.
  */
 public class RingBuffer {
-    private Object[] _elements;
-    private int _nbElements;
-    private int _inputIndex;
-    private int _outputIndex;
+    private Object[] elements;
+    private int nbElements;
+    private int inputIndex;
+    private int outputIndex;
 
     public RingBuffer(int capacity) {
-        _elements = new Object[capacity];
-        _nbElements = 0;
-        _inputIndex = 0;
-        _outputIndex = 0;
+        elements = new Object[capacity];
+        nbElements = 0;
+        inputIndex = 0;
+        outputIndex = 0;
     }
 
     public boolean isEmpty() {
-        return _nbElements == 0;
+        return nbElements == 0;
     }
 
     public int size() {
-        return _nbElements;
+        return nbElements;
     }
 
     public synchronized void push(Object element) {
-        while (_nbElements == _elements.length) {
+        while (nbElements == elements.length) {
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        _elements[_inputIndex] = element;
-        _inputIndex = (_inputIndex + 1) % _elements.length;
-        _nbElements++;
+        elements[inputIndex] = element;
+        inputIndex = (inputIndex + 1) % elements.length;
+        nbElements++;
         notifyAll();
     }
 
     public synchronized Object pop() {
-        while (_nbElements == 0) {
+        while (nbElements == 0) {
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        Object element = _elements[_outputIndex];
-        _outputIndex = (_outputIndex + 1) % _elements.length;
-        _nbElements--;
+        Object element = elements[outputIndex];
+        outputIndex = (outputIndex + 1) % elements.length;
+        nbElements--;
         notifyAll();
         return element;
     }

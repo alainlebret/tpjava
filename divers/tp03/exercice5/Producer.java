@@ -25,14 +25,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Producer implements Runnable {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    private String _name;
-    private RingBuffer _buffer;
+    private String name;
+    private RingBuffer buffer;
 
     public Producer(String name, RingBuffer buffer) {
-        _name = name;
-        _buffer = buffer;
+        this.name = name;
+        this.buffer = buffer;
         new Thread(this).start();
     }
 
@@ -40,8 +40,8 @@ public class Producer implements Runnable {
     public void run() {
         while (true) {
             int value = (int) (Math.random() * 100);
-            LOGGER.log(Level.INFO, _name + " dépose " + value);
-            _buffer.push(value);
+            LOGGER.log(Level.INFO, name + " dépose " + value);
+            buffer.push(value);
             try {
                 Thread.sleep((int) (Math.random() * 1000));
             } catch (InterruptedException e) {

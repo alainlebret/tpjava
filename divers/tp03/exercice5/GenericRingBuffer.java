@@ -25,48 +25,48 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class GenericRingBuffer<T> implements Iterable<T> {
-    private T[] _elements;
-    private int _nbElements;
-    private int _outputIndex;
-    private int _inputIndex;
+    private T[] elements;
+    private int nbElements;
+    private int outputIndex;
+    private int inputIndex;
 
     public GenericRingBuffer(int capacity) {
-        _elements = (T[]) new Object[capacity];
+        elements = (T[]) new Object[capacity];
     }
 
     public boolean isEmpty() {
-        return _nbElements == 0;
+        return nbElements == 0;
     }
 
     public int size() {
-        return _nbElements;
+        return nbElements;
     }
 
     public synchronized void push(T element) {
-        while (_nbElements == _elements.length) {
+        while (nbElements == elements.length) {
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        _elements[_inputIndex] = element;
-        _inputIndex = (_inputIndex + 1) % _elements.length;
-        _nbElements++;
+        elements[inputIndex] = element;
+        inputIndex = (inputIndex + 1) % elements.length;
+        nbElements++;
         notifyAll();
     }
 
     public synchronized T pop() {
-        while (_nbElements == 0) {
+        while (nbElements == 0) {
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        T element = _elements[_outputIndex];
-        _outputIndex = (_outputIndex + 1) % _elements.length;
-        _nbElements--;
+        T element = elements[outputIndex];
+        outputIndex = (outputIndex + 1) % elements.length;
+        nbElements--;
         notifyAll();
         return element;
     }
@@ -81,7 +81,7 @@ public class GenericRingBuffer<T> implements Iterable<T> {
         private int i = 0;
 
         public boolean hasNext() {
-            return i < _nbElements;
+            return i < nbElements;
         }
 
         public void remove() {
@@ -92,7 +92,7 @@ public class GenericRingBuffer<T> implements Iterable<T> {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
-            return _elements[i++];
+            return elements[i++];
         }
     }
 }

@@ -23,63 +23,63 @@
 package covid19;
 
 public class AminoAcid {
-    private String _symbole;
-    private String _code;
-    private String _name;
-    private String _codons;
-    private String _iub;
+    private String symbol;
+    private String code;
+    private String name;
+    private String codons;
+    private String iub;
 
     public AminoAcid() {
     }
 
     public String getSymbole() {
-        return _symbole;
+        return symbol;
     }
 
     public String getCode() {
-        return _code;
+        return code;
     }
 
     public String getName() {
-        return _name;
+        return name;
     }
 
     public String getCodons() {
-        return _codons;
+        return codons;
     }
 
     public String getIub() {
-        return _iub;
+        return iub;
     }
 
-    public void setSymbole(String _symbole) {
-        this._symbole = _symbole;
+    public void setSymbole(String symbol) {
+        this.symbol = symbol;
     }
 
-    public void setCode(String _code) {
-        this._code = _code;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public void setName(String _name) {
-        this._name = _name;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setCodons(String _codons) {
-        this._codons = _codons;
+    public void setCodons(String codons) {
+        this.codons = codons;
     }
 
-    public void setIub(String _iub) {
-        this._iub = _iub;
+    public void setIub(String iub) {
+        this.iub = iub;
     }
 
     @Override
     public String toString() {
         return "AminoAcid{" +
-                "Symbole='" + _symbole + '\'' +
-                ", Code='" + _code + '\'' +
-                ", Nom='" + _name + '\'' +
-                ", Codons='" + _codons + '\'' +
-                ", IUB='" + _iub + '\'' +
+                "Symbole='" + symbol + '\'' +
+                ", Code='" + code + '\'' +
+                ", Nom='" + name + '\'' +
+                ", Codons='" + codons + '\'' +
+                ", IUB='" + iub + '\'' +
                 '}';
     }
 

@@ -38,15 +38,15 @@ import static org.junit.jupiter.api.Assertions.*;
  * See: https://howtodoinjava.com/junit5
  */
 public class FilteredDirectoryTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     FilteredDirectory filteredDirectory;
     String pathname = "divers/tp03/exercice1/ressources";
     String[] files = {"Class1.java", "Class2.java", "Class3.java"};
 
     // For display test
-    private final InputStream systemIn = System.in;
-    private final PrintStream systemOut = System.out;
+    private static final InputStream systemIn = System.in;
+    private static final PrintStream systemOut = System.out;
     private ByteArrayInputStream testIn;
     private ByteArrayOutputStream testOut;
 

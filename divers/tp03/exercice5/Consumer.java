@@ -25,22 +25,22 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Consumer implements Runnable {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    private final String _name;
-    private final RingBuffer _buffer;
+    private final String name;
+    private final RingBuffer buffer;
 
     public Consumer(String name, RingBuffer buffer) {
-        _name = name;
-        _buffer = buffer;
+        this.name = name;
+        this.buffer = buffer;
         new Thread(this).start();
     }
 
     @Override
     public void run() {
         while (true) {
-            int value = (int) _buffer.pop();
-            LOGGER.log(Level.INFO, _name + " prélève " + value);
+            int value = (int) buffer.pop();
+            LOGGER.log(Level.INFO, name + " prélève " + value);
              try {
                 Thread.sleep((int) (Math.random() * 1000));
             } catch (InterruptedException e) {

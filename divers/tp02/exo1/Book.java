@@ -32,7 +32,7 @@ public class Book extends Document {
     /**
      * The author of the book
      */
-    private final String _author;
+    private final String author;
 
     /**
      * Creates a new book with the given number, title and author
@@ -44,7 +44,7 @@ public class Book extends Document {
      */
     public Book(int number, String title, String author) {
         super(number, title);
-        _author = author;
+        this.author = author;
     }
 
     /**
@@ -54,7 +54,7 @@ public class Book extends Document {
      */
     public Book(Book book) {
         super(book.getNumber(), book.getTitle());
-        _author = book._author;
+        author = book.author;
     }
 
     /**
@@ -63,7 +63,7 @@ public class Book extends Document {
      * @return The author of the book.
      */
     public String getAuthor() {
-        return _author;
+        return author;
     }
 
     /**
@@ -84,13 +84,13 @@ public class Book extends Document {
             return false;
         }
         Book d = (Book) o;
-        return _author.equals(d._author);
+        return author.equals(d.author);
     }
 
     @Override
     public int hashCode() {
         int hashcode = super.hashCode();
-        hashcode = 31 * hashcode + _author.hashCode();
+        hashcode = 31 * hashcode + author.hashCode();
         return hashcode;
     }
 

@@ -30,14 +30,14 @@ public class Directory {
     /**
      * Pathname of the directory.
      */
-    private final String _directory;
+    private final String directory;
 
     public Directory(String directory) {
-        _directory = directory;
+        this.directory = directory;
     }
 
     public String[] list() {
-        File path = new File(_directory);
+        File path = new File(directory);
         String[] files = null;
 
         if (path.exists() && path.isDirectory()) {
@@ -57,7 +57,7 @@ public class Directory {
     @Override
     public String toString() {
         return "Directory{" +
-                "_directory='" + _directory + '\'' +
+                "_directory='" + directory + '\'' +
                 '}';
     }
 }

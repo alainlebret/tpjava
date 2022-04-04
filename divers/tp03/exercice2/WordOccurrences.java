@@ -28,10 +28,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WordOccurrences {
-    private HashMap<String, Integer> _wordsAndOccurrences;
+    private HashMap<String, Integer> wordsAndOccurrences;
 
     public WordOccurrences() {
-        _wordsAndOccurrences = new HashMap<>();
+        wordsAndOccurrences = new HashMap<>();
     }
 
     public void read(String file) throws IOException {
@@ -44,21 +44,21 @@ public class WordOccurrences {
             words = line.split("[ ,.;:_\\-+*/\\n\"'{}()=><\\t!?]");
             for (String aWord : words) {
                 occurrences = 1;
-                if (_wordsAndOccurrences.containsKey(aWord)) {
-                    occurrences = _wordsAndOccurrences.get(aWord) + 1;
+                if (wordsAndOccurrences.containsKey(aWord)) {
+                    occurrences = wordsAndOccurrences.get(aWord) + 1;
                 }
-                _wordsAndOccurrences.put(aWord, occurrences);
+                wordsAndOccurrences.put(aWord, occurrences);
             }
         }
         br.close();
     }
 
     public HashMap<String, Integer> getWordsAndOccurrences() {
-        return _wordsAndOccurrences;
+        return wordsAndOccurrences;
     }
 
     public void display() {
-        for (Map.Entry<String, Integer> aWordAndItsOccurrences : _wordsAndOccurrences.entrySet()) {
+        for (Map.Entry<String, Integer> aWordAndItsOccurrences : wordsAndOccurrences.entrySet()) {
             if (!aWordAndItsOccurrences.getKey().equals("")) {
                 String message = String.format("Le mot \"%s\" figure %d fois.", aWordAndItsOccurrences.getKey(), aWordAndItsOccurrences.getValue());
                 System.out.println(message);

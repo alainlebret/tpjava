@@ -38,23 +38,25 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
  * See: https://howtodoinjava.com/junit5
  */
 public class Rot13FilterOutputStreamTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    final String baseName = "divers/tp03/exercice3/ressources";
-    final String outEncodedFilename = "test1.cry";
-    final String outUnencodedFilename = "test1.uncry";
+    static final String BASENAME = "divers/tp03/exercice3/ressources";
+    static final String OUT_ENCODED_FILENAME = "test1.cry";
+    static final String OUT_UNENCODED_FILENAME = "test1.uncry";
 
     char[] unencodedChars = "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|".toCharArray();
     char[] encodedChars = "!\"#$%&'()*+,-./0123456789:;<=>?@NOPQRSTUVWXYZABCDEFGHIJKLM[\\]^_`nopqrstuvwxyzabcdefghijklm{|".toCharArray();
 
-    File outEncoded, outUnencoded;
-    Rot13FilterOutputStream rfOutEncoded, rfOutUnencoded;
+    File outEncoded;
+    File outUnencoded;
+    Rot13FilterOutputStream rfOutEncoded;
+    Rot13FilterOutputStream rfOutUnencoded;
 
     @BeforeEach
     public void setUp() throws FileNotFoundException {
         LOGGER.log(Level.INFO, "Testing class Rot13FilterOutputStream");
-        outEncoded = new File(baseName + "/" + outEncodedFilename);
-        outUnencoded = new File(baseName + "/" + outUnencodedFilename);
+        outEncoded = new File(BASENAME + "/" + OUT_ENCODED_FILENAME);
+        outUnencoded = new File(BASENAME + "/" + OUT_UNENCODED_FILENAME);
         rfOutEncoded = new Rot13FilterOutputStream(new FileOutputStream(outEncoded));
         rfOutUnencoded = new Rot13FilterOutputStream(new FileOutputStream(outUnencoded));
     }
@@ -70,22 +72,23 @@ public class Rot13FilterOutputStreamTest {
             rfOutEncoded.write(charact);
         }
         rfOutEncoded.close();
-        assertArrayEquals(encodedChars, readAsciiCodes(baseName + "/" + outEncodedFilename));
+        assertArrayEquals(encodedChars, readAsciiCodes(BASENAME + "/" + OUT_ENCODED_FILENAME));
 
         for (int i = 0; i < 92; i++) {
             rfOutUnencoded.write(encodedChars[i]);
         }
         rfOutUnencoded.close();
-        assertArrayEquals(unencodedChars, readAsciiCodes(baseName + "/" + outUnencodedFilename));
+        assertArrayEquals(unencodedChars, readAsciiCodes(BASENAME + "/" + OUT_UNENCODED_FILENAME));
 
         LOGGER.log(Level.INFO, "Rot13FilterOutputStreamTest::write() has passed");
     }
 
     private char[] readAsciiCodes(String filename) throws IOException {
-        FileReader fr = new FileReader(new File(filename));
+        FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
         char[] asciiCodes = new char[92];
-        int c, i = 0;
+        int c;
+        int i = 0;
 
         while ((c = br.read()) != -1) {
             char character = (char) c;

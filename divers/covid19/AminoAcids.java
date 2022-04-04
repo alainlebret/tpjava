@@ -29,10 +29,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AminoAcids {
-    private List<AminoAcid> _aminoAcids;
+    private List<AminoAcid> aminoAcids;
 
     public AminoAcids() {
-        _aminoAcids = new ArrayList<>();
+        aminoAcids = new ArrayList<>();
     }
 
     public void read(String filename) {
@@ -69,14 +69,14 @@ public class AminoAcids {
                 index++;
             }
             index = 0;
-            _aminoAcids.add(aa);
+            aminoAcids.add(aa);
         }
 
         scanner.close();
     }
 
     public void display() {
-        for (AminoAcid aa : _aminoAcids) {
+        for (AminoAcid aa : aminoAcids) {
             System.out.println(aa);
         }
     }

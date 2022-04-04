@@ -42,16 +42,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * See: https://howtodoinjava.com/junit5
  */
 class DirectoryTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    final String ressourcesPathname = "divers/tp03/exercice1/ressources";
+    static final String RESOURCES_PATHNAME = "divers/tp03/exercice1/ressources";
     final String[] files = {"Class1.java", "Class2.java", "Class3.java", "f1.cc", "test.txt"};
     Directory ressourcesDirectory;
     Directory homeDirectory;
 
     // For display test
-    private final InputStream systemIn = System.in;
-    private final PrintStream systemOut = System.out;
+    private static final InputStream systemIn = System.in;
+    private static final PrintStream systemOut = System.out;
     private ByteArrayInputStream testIn;
     private ByteArrayOutputStream testOut;
 
@@ -63,7 +63,7 @@ class DirectoryTest {
         System.setOut(new PrintStream(testOut));
         LOGGER.log(Level.INFO, "Input/output have been redirected for testing");
 
-        ressourcesDirectory = new Directory(ressourcesPathname);
+        ressourcesDirectory = new Directory(RESOURCES_PATHNAME);
         homeDirectory = new Directory(System.getProperty("user.home"));
     }
 
@@ -107,7 +107,7 @@ class DirectoryTest {
     public void testToString() {
         LOGGER.log(Level.INFO, "Directory::toString()");
         System.out.println("Testing toString() method.");
-        assertEquals("Directory{_directory='" + ressourcesPathname + "'}", ressourcesDirectory.toString());
+        assertEquals("Directory{_directory='" + RESOURCES_PATHNAME + "'}", ressourcesDirectory.toString());
         LOGGER.log(Level.INFO, "Directory::toString() has passed");
     }
 

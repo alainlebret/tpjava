@@ -41,8 +41,8 @@ import java.util.logging.Logger;
  * See: https://howtodoinjava.com/junit5
  */
 class LibraryTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-    final static int SIZE = 5;
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final int SIZE = 5;
 
     Library library;
     List<Integer> numbers;

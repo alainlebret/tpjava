@@ -37,7 +37,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * See: https://howtodoinjava.com/junit5
  */
 class DocumentTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     List<Document> documents;
     List<Integer> numbers;
@@ -46,7 +46,7 @@ class DocumentTest {
     @BeforeEach
     void setUp() {
         LOGGER.log(Level.INFO, "Testing class Document");
-        documents = new ArrayList();
+        documents = new ArrayList<>();
         numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 10, 14, 75, 654, 2534, 117531, 546321, 2));
         titles = new ArrayList<>(Arrays.asList("FAQ du langage C", "Charte visuelle", "HowTo Java",
                 "Tutoriel Python", "Mémento de chimie inorganique", "Formules de trigonométrie",
@@ -92,7 +92,7 @@ class DocumentTest {
     }
 
     private List<Integer> getActualNumbers() {
-        List<Integer> actualNumbers = new ArrayList();
+        List<Integer> actualNumbers = new ArrayList<>();
         for (Document d : documents) {
             actualNumbers.add(d.getNumber());
         }
@@ -108,7 +108,7 @@ class DocumentTest {
     }
 
     private List<String> getActualTitles() {
-        List<String> actualTitles = new ArrayList();
+        List<String> actualTitles = new ArrayList<>();
         for (Document d : documents) {
             actualTitles.add(d.getTitle());
         }
@@ -137,7 +137,8 @@ class DocumentTest {
     @Test
     @Tag("development")
     void testHashCode() {
-        int hc, i = 0;
+        int hc;
+        int i = 0;
 
         LOGGER.log(Level.INFO, "Document::hashCode()");
         for (Document d : documents) {

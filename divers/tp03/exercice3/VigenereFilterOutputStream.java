@@ -28,14 +28,14 @@ import java.io.OutputStream;
 /**
  * A class that demonstrates the using of a FilterOutputStream.
  */
-public class Rot13FilterOutputStream extends FilterOutputStream implements Cypher {
+public class VigenereFilterOutputStream extends FilterOutputStream {
 
     /**
      * Creates a new filter output stream from a given output stream.
      *
      * @param out The output stream to filter.
      */
-    public Rot13FilterOutputStream(OutputStream out) {
+    public VigenereFilterOutputStream(OutputStream out) {
         super(out);
     }
 

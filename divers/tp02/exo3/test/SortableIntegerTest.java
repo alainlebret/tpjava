@@ -38,10 +38,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * See: https://howtodoinjava.com/junit5
  */
 class SortableIntegerTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-    final static int NUMBER_OF_INTEGERS = 100;
-    final static int MIN = -1000;
-    final static int MAX = 1000;
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final int NUMBER_OF_INTEGERS = 100;
+    static final int MIN = -1000;
+    static final int MAX = 1000;
 
     int[] randomValues;
     SortableInteger[] someSortableIntegers;

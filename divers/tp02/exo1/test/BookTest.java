@@ -39,7 +39,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * See: https://howtodoinjava.com/junit5
  */
 class BookTest {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     List<Book> books;
     List<Integer> numbers;
@@ -97,7 +97,7 @@ class BookTest {
     }
 
     private List<Integer> getActualNumbers() {
-        List<Integer> actualNumbers = new ArrayList();
+        List<Integer> actualNumbers = new ArrayList<>();
         for (Book b : books) {
             actualNumbers.add(b.getNumber());
         }
@@ -112,7 +112,7 @@ class BookTest {
     }
 
     private List<String> getActualTitles() {
-        List<String> actualTitles = new ArrayList();
+        List<String> actualTitles = new ArrayList<>();
         for (Book b : books) {
             actualTitles.add(b.getTitle());
         }
@@ -127,7 +127,7 @@ class BookTest {
     }
 
     private List<String> getActualAuthors() {
-        List<String> actualAuthors = new ArrayList();
+        List<String> actualAuthors = new ArrayList<>();
         for (Book b : books) {
             actualAuthors.add(b.getAuthor());
         }
@@ -155,7 +155,8 @@ class BookTest {
 
     @Test
     void testHashCode() {
-        int hc, i = 0;
+        int hc;
+        int i = 0;
 
         LOGGER.log(Level.INFO, "Book::hashCode()");
         for (Book b : books) {

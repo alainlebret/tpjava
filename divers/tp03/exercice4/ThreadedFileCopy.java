@@ -25,29 +25,29 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ThreadedFileCopy extends Thread {
-    final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    FileCopy _fc;
-    int _numberOfBytesCopied;
+    FileCopy fc;
+    int numberOfBytesCopied;
 
     public ThreadedFileCopy(String name, FileCopy fc) {
         super(name);
-        _fc = fc;
-        _numberOfBytesCopied = 0;
+        this.fc = fc;
+        numberOfBytesCopied = 0;
     }
 
     public void displayNumberBytesCopied() {
-        int copied = _fc.getNumberOfBytesCopied();
-        if (_numberOfBytesCopied != copied) {
+        int copied = fc.getNumberOfBytesCopied();
+        if (numberOfBytesCopied != copied) {
             System.out.println("" + copied + " bytes copied.");
-            _numberOfBytesCopied = copied;
+            numberOfBytesCopied = copied;
         }
     }
 
     @Override
     public void run() {
         LOGGER.log(Level.INFO, "ThreadCopy - START " + Thread.currentThread().getName());
-        while (!_fc.isFinished()) {
+        while (!fc.isFinished()) {
             displayNumberBytesCopied();
             try {
                 Thread.sleep(1000);
